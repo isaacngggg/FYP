@@ -92,6 +92,20 @@
       h1 {
         margin-bottom: 10px;
       }
+      .vertical-stack {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+      }
+      .horizontal-stack {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        padding: 10px;
+      }
+      
     </style>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Pysearch</title>
@@ -103,15 +117,24 @@
         alt="pysearch logo"
         class="logo"
       />
-      <form action="/" method="post">
-        <input
+      <form action="/" method="post" class="vertical-stack">
+        <div class = "horizontal-stack">
+          <input
           type="text"
           name="queryString"
           placeholder="Search any python functions here, e.g: argmax"
         />
+        
         <div class="buttons">
           <button type="submit" name="searchButton">Search</button>
         </div>
+        </div>
+        
+        <div class="horizontal-stack">
+          <label for="slider">N value:</label>
+          <input type="range" id="slider" name="slider" min="5" max="805" step="50">
+        </div>
+        
       </form>
     </div>
   </body>

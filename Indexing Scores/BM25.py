@@ -47,6 +47,3 @@ doc_scores = bm25.get_scores(tokenized_query)
 # ['It is quite windy in London']
 print (doc_scores)
 print (bm25.get_top_n(tokenized_query, corpus, n=1))
-
-
-

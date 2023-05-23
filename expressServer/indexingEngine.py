@@ -3,7 +3,12 @@ import sys
 import json
 # Retrieve the form data from command-line arguments
 query = sys.argv[1]
-#query = "maximum array"
+n = int(sys.argv[2])
+# query = "maximum array"
+# n = 100
+# if (n < 1):
+#     n = 5
+
 from pymongo import MongoClient
 import numpy as np
 import requests
@@ -47,15 +52,6 @@ def queryBERT(user_input,corpus):
                                             "sentences": corpus }})
     return response.json()
 
-# def fetchMongobyID (ID):
-#     client = MongoClient('mongodb://localhost:27017/')
-#     db = client['scrapped-function']
-#     collection = db['all']
-#     document = collection.find_one({"_id": ObjectId(ID)})
-#     #print (document)
-#     client.close()
-#     return document
-
 def getTopN_IDs (sortedBertArr, IDs,n = 5):
     TopN_ids = []
     for i in range (0,n):
@@ -91,17 +87,17 @@ def fetchMongobyID (ID):
     client.close()
     return document
 
-n =100
+
 tokenized_corpus, corpus, IDs = fetchAllMongo()
 normalised_query = normalise(query)
 topN_BM25Arr = getArr_BM25Top_n(tokenized_corpus,normalised_query, n)
 topN_corpus = corpus[topN_BM25Arr].tolist()
 topN_IDs = IDs[topN_BM25Arr].tolist()
+
+
 scoreBERT = np.array(queryBERT(query,topN_corpus))
 sortedBertArr = np.argsort(-scoreBERT)
-
-TopN_ids = getTopN_IDs(sortedBertArr,topN_IDs)
-
+TopN_ids = getTopN_IDs(sortedBertArr,topN_IDs,n = 20)
 fetchedArr = []
 for id in TopN_ids:
     fetchedArr += [fetchMongobyID(id)]

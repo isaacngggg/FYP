@@ -22,8 +22,9 @@ app.get("/", function (req,res){
 
 
 app.post("/", function (req,res){
-    var query = String(req.body.queryString);
-    res.redirect('/result?input=' + query);
+    const query = String(req.body.queryString);
+    const n = req.body.slider;
+    res.redirect('/result?input='+ query + '&n=' + n);
 
 })
 
@@ -39,8 +40,9 @@ app.post("/", function (req,res){
 
 app.get("/result", function (req, res) {
     const query = req.query.input;
+    const n = req.query.n;
     // var result = mongoMod.run(query).catch(console.dir);
-    const pythonProcess = spawn('python', ['indexingEngine.py', query]);
+    const pythonProcess = spawn('python', ['indexingEngine.py', query, n]);
     let output = '';
     pythonProcess.stdout.on('data', (data) => {
         output += data.toString();
