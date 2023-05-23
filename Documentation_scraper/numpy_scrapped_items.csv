@@ -1,0 +1,1523 @@
+description,title
+Returns the indices that would sort an array.,numpy.argsort
+Perform an indirect stable sort using a sequence of keys.,numpy.lexsort
+Find indices where elements should be inserted to maintain order.,numpy.searchsorted
+Join a sequence of arrays along an existing axis.,numpy.concatenate
+Create an array.,numpy.array
+Return a partitioned copy of an array.,numpy.partition
+Return a sorted copy of an array.,numpy.sort
+Return evenly spaced values within a given interval.,numpy.arange
+Convert an array of datetimes into an array of strings.,numpy.datetime_as_string
+Functions that operate element by element on whole arrays.,numpy.ufunc
+Cholesky decomposition.,numpy.linalg.cholesky
+Return the Bartlett window.,numpy.bartlett
+"Return a new matrix of given shape and type, without initializing entries.",numpy.matlib.empty
+"Returns a list of files named ‘fname’ from
+1) System-wide directory (directory-location of this module)
+2) Users HOME directory (os.environ[‘HOME’])
+3) Local directory",numpy.distutils.system_info.get_standard_file
+Return evenly spaced numbers over a specified interval.,numpy.linspace
+Apply a function repeatedly over multiple axes.,numpy.apply_over_axes
+"Class to convert formats, names, titles description to a dtype.",numpy.format_parser
+,numpy.distutils.cpuinfo.cpu
+Apply a function to 1-D slices along the given axis.,numpy.apply_along_axis
+Compute the (Moore-Penrose) pseudo-inverse of a matrix.,numpy.linalg.pinv
+"Reduces ,’s dimension by one, by applying ufunc along one axis.",numpy.ufunc.reduce
+"Solve a linear matrix equation, or system of linear scalar equations.",numpy.linalg.solve
+Returns the indices of the minimum values along an axis.,numpy.argmin
+Singular Value Decomposition.,numpy.linalg.svd
+Tuple of bytes to step in each dimension when traversing an array.,numpy.ndarray.strides
+Interpret the input as a matrix.,numpy.mat
+Compute the one-dimensional discrete Fourier Transform.,numpy.fft.fft
+A unique number for each of the 21 different built-in types.,numpy.dtype.num
+Returns the indices of the maximum values along an axis.,numpy.argmax
+Pad an array.,numpy.pad
+Return the cross product of two (arrays of) vectors.,numpy.cross
+Clip (limit) the values in an array.,numpy.clip
+Compute the 2-dimensional inverse discrete Fourier Transform.,numpy.fft.ifft2
+"Return the complex conjugate, element-wise.",numpy.conj
+Return the scalar type of highest precision of the same kind as the input.,numpy.maximum_sctype
+"Estimate a covariance matrix, given data and weights.",numpy.cov
+Return the cumulative sum of the elements along a given axis.,numpy.cumsum
+Return the cumulative product of elements along a given axis.,numpy.cumprod
+"Compute bit-wise inversion, or bit-wise NOT, element-wise.",numpy.invert
+"Subtract arguments, element-wise.",numpy.subtract
+Return an array representing the indices of a grid.,numpy.indices
+One-dimensional linear interpolation for monotonically increasing sample points.,numpy.interp
+Calculate the n-th discrete difference along the given axis.,numpy.diff
+Divide arguments element-wise.,numpy.divide
+Element-wise maximum of array elements.,numpy.maximum
+Matrix product of two arrays.,numpy.matmul
+Find the product of two polynomials.,numpy.polymul
+Element-wise minimum of array elements.,numpy.minimum
+Compute the arithmetic mean along the specified axis.,numpy.mean
+Logarithm of the sum of exponentiations of the inputs in base-2.,numpy.logaddexp2
+Compute the median along the specified axis.,numpy.median
+Return coordinate matrices from coordinate vectors.,numpy.meshgrid
+ instance which returns an open multi-dimensional “meshgrid”.,numpy.ogrid
+Compute the outer product of two vectors.,numpy.outer
+Sum of array elements over a given axis.,numpy.sum
+"An object to simplify the interaction of the array with the ctypes
+module.",numpy.ndarray.ctypes
+Return the sum along diagonals of the array.,numpy.trace
+"Converts a flat index or array of flat indices into a tuple
+of coordinate arrays.",numpy.unravel_index
+Compute the standard deviation along the specified axis.,numpy.std
+Returns the element-wise remainder of division.,numpy.remainder
+Multidimensional index iterator.,numpy.ndenumerate
+Stack arrays in sequence horizontally (column wise).,numpy.hstack
+"Base-2 logarithm of ,.",numpy.log2
+Stack 1-D arrays as columns into a 2-D array.,numpy.column_stack
+Round elements of the array to the nearest integer.,numpy.rint
+"Calculate , for all , in the input array.",numpy.exp2
+Returns an element-wise indication of the sign of a number.,numpy.sign
+Stack arrays in sequence vertically (row wise).,numpy.row_stack
+"Return the base 10 logarithm of the input array, element-wise.",numpy.log10
+Split an array into multiple sub-arrays.,numpy.array_split
+"Return the natural logarithm of one plus the input array, element-wise.",numpy.log1p
+Translates slice objects to concatenation along the first axis.,numpy.r_
+"Return the non-negative square-root of an array, element-wise.",numpy.sqrt
+Return a 2-D array with ones on the diagonal and zeros elsewhere.,numpy.eye
+Return the identity array.,numpy.identity
+Cosine element-wise.,numpy.cos
+"Trigonometric sine, element-wise.",numpy.sin
+Context manager for floating-point error handling.,numpy.errstate
+Compute tangent element-wise.,numpy.tan
+"Inverse sine, element-wise.",numpy.arcsin
+"Returns the lowest common multiple of , and ",numpy.lcm
+Convert inputs to arrays with at least one dimension.,numpy.atleast_1d
+Broadcast any number of arrays against each other.,numpy.broadcast_arrays
+Return an array copy of the given object.,numpy.copy
+Interpret a buffer as a 1-dimensional array.,numpy.frombuffer
+View inputs as arrays with at least three dimensions.,numpy.atleast_3d
+Construct an array from an index array and a list of arrays to choose from.,numpy.choose
+Return specified diagonals.,numpy.diagonal
+"Copy of the array, cast to a specified type.",numpy.ndarray.astype
+Compute hyperbolic tangent element-wise.,numpy.tanh
+View inputs as arrays with at least two dimensions.,numpy.atleast_2d
+"Given the “legs” of a right triangle, return its hypotenuse.",numpy.hypot
+"Element-wise arc tangent of , choosing the quadrant correctly.",numpy.arctan2
+"Hyperbolic cosine, element-wise.",numpy.cosh
+Take elements from an array along an axis.,numpy.take
+Number of elements in the array.,numpy.ma.MaskedArray.size
+Context manager for setting print options.,numpy.printoptions
+Tuple of bytes to step in each dimension when traversing an array.,numpy.ma.MaskedArray.strides
+"An object to simplify the interaction of the array with the ctypes
+module.",numpy.ma.MaskedArray.ctypes
+"Hyperbolic sine, element-wise.",numpy.sinh
+Interchange two axes of an array.,numpy.swapaxes
+Convert angles from degrees to radians.,numpy.deg2rad
+Total bytes consumed by the elements of the array.,numpy.ma.MaskedArray.nbytes
+Compute the bit-wise XOR of two arrays element-wise.,numpy.bitwise_xor
+Compute the bit-wise OR of two arrays element-wise.,numpy.bitwise_or
+Packs the elements of a binary-valued array into bits in a uint8 array.,numpy.packbits
+"Return the sum of array elements over a given axis treating Not a
+Numbers (NaNs) as zero.",numpy.nansum
+"Convert the input to a masked array, conserving subclasses.",numpy.ma.asanyarray
+Convert to float.,numpy.ma.MaskedArray.__float__
+An array class with possibly masked values.,numpy.ma.array
+Join a sequence of arrays along a new axis.,numpy.stack
+Changes elements of an array based on conditional and input values.,numpy.putmask
+Return the truth value of (x1 >= x2) element-wise.,numpy.greater_equal
+Return matrix rank of array using SVD method,numpy.linalg.matrix_rank
+Return input with invalid data masked and replaced by a fill value.,numpy.ma.fix_invalid
+Compute the q-th quantile of the data along the specified axis.,numpy.quantile
+Convert to int.,numpy.ma.MaskedArray.__int__
+Mask an array where greater than a given value.,numpy.ma.masked_greater
+Return a full array with the same shape and type as a given array.,numpy.full_like
+"Function to calculate only the edges of the bins used by the ,
+function.",numpy.histogram_bin_edges
+Mask an array inside a given interval.,numpy.ma.masked_inside
+Mask an array where invalid values occur (NaNs or infs).,numpy.ma.masked_invalid
+Mask an array where less than a given value.,numpy.ma.masked_less
+Compute the truth value of x1 OR x2 element-wise.,numpy.logical_or
+"Mask an array where , equal to a given value.",numpy.ma.masked_not_equal
+"Mask the array , where the data are exactly equal to value.",numpy.ma.masked_object
+"Return a copy of self, with masked values filled with a given value.
+,, if there are no masked values to fill, self will be
+returned instead as an ndarray.",numpy.ma.MaskedArray.filled
+Mask using floating point equality.,numpy.ma.masked_values
+Compute the multidimensional histogram of some data.,numpy.histogramdd
+Save a masked array to a file in binary format.,numpy.ma.MaskedArray.tofile
+"Compute the truth value of x1 XOR x2, element-wise.",numpy.logical_xor
+Return the array data as a string containing the raw bytes in the array.,numpy.ma.MaskedArray.tobytes
+Transforms a masked array into a flexible-type array.,numpy.ma.MaskedArray.torecords
+Element-wise minimum of array elements.,numpy.fmin
+"Dump a pickle of the array to the specified file.
+The array can be read back with pickle.load or numpy.load.",numpy.ndarray.dump
+Test element-wise for positive or negative infinity.,numpy.isinf
+Return a copy of the array collapsed into one dimension.,numpy.ma.MaskedArray.flatten
+Return input as an array with masked data replaced by a fill value.,numpy.ma.filled
+"Replace NaN with zero and infinity with large finite numbers (default
+behaviour) or with the numbers defined by the user using the ,,
+, and/or , keywords.",numpy.nan_to_num
+Mask an array outside a given interval.,numpy.ma.masked_outside
+Mask an array where a condition is met.,numpy.ma.masked_where
+"Returns either a new reference to self if dtype is not given or a new array
+of provided data type if dtype is different from the current dtype of the
+array.",numpy.ma.MaskedArray.__array__
+"This method is difficult to implement safely and may be deprecated in
+future releases of NumPy.",numpy.ma.MaskedArray.resize
+Test element-wise for NaT (not a time) and return result as a boolean array.,numpy.isnat
+Return the data of a masked array as an ndarray.,numpy.ma.getdata
+"Return the mask of a masked array, or nomask.",numpy.ma.getmask
+Returns a view of the array with axes transposed.,numpy.ma.MaskedArray.transpose
+Return all the non-masked data as a 1-D array.,numpy.ma.compressed
+"Remove axes of length one from ,.",numpy.ma.MaskedArray.squeeze
+Returns element-wise True where signbit is set (less than zero).,numpy.signbit
+"Return the next floating-point value after x1 towards x2, element-wise.",numpy.nextafter
+"Return the truncated value of the input, element-wise.",numpy.trunc
+Give a new shape to the array without changing its data.,numpy.ma.MaskedArray.reshape
+"Force the mask to soft (default), allowing unmasking by assignment.",numpy.ma.soften_mask
+Return array of indices to the minimum values along the given axis.,numpy.ma.MaskedArray.argmin
+"Save several arrays into a single file in uncompressed , format.",numpy.savez
+"Sort the array, in-place",numpy.ma.MaskedArray.sort
+Compute the q-th percentile of the data along the specified axis.,numpy.percentile
+"Return , where condition is ,.",numpy.ma.MaskedArray.compress
+"Return an ndarray of indices that sort the array along the
+specified axis.  Masked values are filled beforehand to
+,.",numpy.ma.MaskedArray.argsort
+"Force the mask to hard, preventing unmasking by assignment.",numpy.ma.harden_mask
+Use an index array to construct a new array from a set of choices.,numpy.ma.MaskedArray.choose
+,numpy.ma.MaskedArray.take
+Decompose the elements of x into mantissa and twos exponent.,numpy.frexp
+Find indices where elements of v should be inserted in a to maintain order.,numpy.ma.MaskedArray.searchsorted
+Return the indices of unmasked elements that are not zero.,numpy.ma.MaskedArray.nonzero
+Repeat elements of an array.,numpy.ma.MaskedArray.repeat
+Set storage-indexed locations to corresponding values.,numpy.ma.MaskedArray.put
+Return a copy of the array.,numpy.ma.MaskedArray.copy
+Returns True if all elements evaluate to True.,numpy.ma.MaskedArray.all
+Copy an element of an array to a standard Python scalar and return it.,numpy.ma.MaskedArray.item
+"Compute the anomalies (deviations from the arithmetic mean)
+along the given axis.",numpy.ma.MaskedArray.anom
+"Return the complex conjugate, element-wise.",numpy.ma.MaskedArray.conjugate
+Complex-conjugate all elements.,numpy.ma.MaskedArray.conj
+Return the cumulative product of the array elements over the given axis.,numpy.ma.MaskedArray.cumprod
+"Returns True if any of the elements of , evaluate to True.",numpy.ma.MaskedArray.any
+"Return an array whose values are limited to ,.
+One of max or min must be given.",numpy.ma.MaskedArray.clip
+Return the cumulative sum of the array elements over the given axis.,numpy.ma.MaskedArray.cumsum
+"Return (maximum - minimum) along the given dimension
+(i.e. peak-to-peak value).",numpy.ma.MaskedArray.ptp
+Returns the average of the array elements along given axis.,numpy.ma.MaskedArray.mean
+Return the product of the array elements over the given axis.,numpy.ma.MaskedArray.product
+Return the product of the array elements over the given axis.,numpy.ma.MaskedArray.prod
+Return the maximum along a given axis.,numpy.ma.MaskedArray.max
+Returns the standard deviation of the array elements along given axis.,numpy.ma.MaskedArray.std
+Return each element rounded to the given number of decimals.,numpy.ma.MaskedArray.round
+"Returns the pickle of the array as a string.
+pickle.loads will convert the string back to an array.",numpy.ma.MaskedArray.dumps
+Return self<=value.,numpy.ma.MaskedArray.__le__
+Check whether other equals self elementwise.,numpy.ma.MaskedArray.__eq__
+Check whether other does not equal self elementwise.,numpy.ma.MaskedArray.__ne__
+Return self>=value.,numpy.ma.MaskedArray.__ge__
+Return self>value.,numpy.ma.MaskedArray.__gt__
+Compute the variance along the specified axis.,numpy.ma.MaskedArray.var
+Return the minimum along a given axis.,numpy.ma.MaskedArray.min
+Return self<value.,numpy.ma.MaskedArray.__lt__
+True if self else False,numpy.ma.MaskedArray.__bool__
+Return the sum along diagonals of the array.,numpy.ma.MaskedArray.trace
+"Subtract other from self, and return a new masked array.",numpy.ma.MaskedArray.__sub__
+"Divide other into self, and return a new masked array.",numpy.ma.MaskedArray.__div__
+"Multiply self by other, and return a new masked array.",numpy.ma.MaskedArray.__mul__
+"Multiply other by self, and return a new masked array.",numpy.ma.MaskedArray.__rmul__
+"Raise self to the power other, masking the potential NaNs/Infs",numpy.ma.MaskedArray.__pow__
+"Divide self into other, and return a new masked array.",numpy.ma.MaskedArray.__rtruediv__
+"Divide other into self, and return a new masked array.",numpy.ma.MaskedArray.__truediv__
+"Divide other into self, and return a new masked array.",numpy.ma.MaskedArray.__floordiv__
+Return self<<value.,numpy.ma.MaskedArray.__lshift__
+Return value<<self.,numpy.ma.MaskedArray.__rlshift__
+"Raise other to the power self, masking the potential NaNs/Infs",numpy.ma.MaskedArray.__rpow__
+Return self>>value.,numpy.ma.MaskedArray.__rshift__
+Return value|self.,numpy.ma.MaskedArray.__ror__
+Divide self by other in-place.,numpy.ma.MaskedArray.__idiv__
+True divide self by other in-place.,numpy.ma.MaskedArray.__itruediv__
+Subtract other from self in-place.,numpy.ma.MaskedArray.__isub__
+Multiply self by other in-place.,numpy.ma.MaskedArray.__imul__
+Add other to self in-place.,numpy.ma.MaskedArray.__iadd__
+Return value^self.,numpy.ma.MaskedArray.__rxor__
+Return self>>=value.,numpy.ma.MaskedArray.__irshift__
+Return self<<=value.,numpy.ma.MaskedArray.__ilshift__
+Floor divide self by other in-place.,numpy.ma.MaskedArray.__ifloordiv__
+Return the addresses of the data and mask areas.,numpy.ma.MaskedArray.ids
+Delete self[key].,numpy.ma.MaskedArray.__delitem__
+Return a 3-tuple for pickling a MaskedArray.,numpy.ma.MaskedArray.__reduce__
+"Used if , is called on an array.",numpy.ma.MaskedArray.__deepcopy__
+"Return the internal state of the masked array, for pickling
+purposes.",numpy.ma.MaskedArray.__getstate__
+Return len(self).,numpy.ma.MaskedArray.__len__
+Set the mask.,numpy.ma.MaskedArray.__setmask__
+"Force the mask to hard, preventing unmasking by assignment.",numpy.ma.MaskedArray.harden_mask
+Return key in self.,numpy.ma.MaskedArray.__contains__
+"x.__setitem__(i, y) <==> x[i]=y",numpy.ma.MaskedArray.__setitem__
+Count the non-masked elements of the array along the given axis.,numpy.ma.MaskedArray.count
+,numpy.ma.MaskedArray.set_fill_value
+"The filling value of the masked array is a scalar. When setting, None
+will set to a default based on the data type.",numpy.ma.MaskedArray.get_fill_value
+Reduce a mask to nomask when possible.,numpy.ma.MaskedArray.shrink_mask
+"Copy the mask and set the , flag to ,.",numpy.ma.MaskedArray.unshare_mask
+Special hook for ufuncs.,numpy.ma.MaskedArray.__array_wrap__
+Create a new masked array from scratch.,numpy.ma.MaskedArray.__new__
+"Force the mask to soft (default), allowing unmasking by assignment.",numpy.ma.MaskedArray.soften_mask
+x.__getitem__(y) <==> x[y],numpy.ma.MaskedArray.__getitem__
+Set the default format for the string representation of polynomials.,numpy.polynomial.set_default_printstyle
+Least squares fit of Chebyshev series to data.,numpy.polynomial.chebyshev.chebfit
+A Laguerre series class.,numpy.polynomial.laguerre.Laguerre
+Least squares fit to data.,numpy.polynomial.chebyshev.Chebyshev.fit
+A Legendre series class.,numpy.polynomial.legendre.Legendre
+A Chebyshev series class.,numpy.polynomial.chebyshev.Chebyshev
+An Hermite series class.,numpy.polynomial.hermite.Hermite
+An HermiteE series class.,numpy.polynomial.hermite_e.HermiteE
+Return the shape of an array.,numpy.shape
+Return an array (ndim >= 1) laid out in Fortran order in memory.,numpy.asfortranarray
+Return the directory that contains the NumPy *.h header files.,numpy.get_include
+A power series class.,numpy.polynomial.polynomial.Polynomial
+"Restore the internal state of the masked array, for
+pickling purposes.  , is typically the output of the
+, output, and is a 5-tuple:",numpy.ma.MaskedArray.__setstate__
+Return a boolean indicating whether the data is contiguous.,numpy.ma.MaskedArray.iscontiguous
+Return str(self).,numpy.ma.MaskedArray.__str__
+Return self&=value.,numpy.ma.MaskedArray.__iand__
+"Raise self to the power other, in place.",numpy.ma.MaskedArray.__ipow__
+Return self^=value.,numpy.ma.MaskedArray.__ixor__
+Literal string representation.,numpy.ma.MaskedArray.__repr__
+Return self|=value.,numpy.ma.MaskedArray.__ior__
+"Used if , is called on an array. Returns a copy of the array.",numpy.ma.MaskedArray.__copy__
+Return self%=value.,numpy.ma.MaskedArray.__imod__
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.polynomial.polyone
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.polynomial.polyx
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.chebyshev.chebone
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.chebyshev.chebx
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.polynomial.polyzero
+Raise a polynomial to a power.,numpy.polynomial.polynomial.polypow
+Evaluate a polynomial at points x.,numpy.polynomial.polynomial.polyval
+"Evaluate a 2-D polynomial at points (x, y).",numpy.polynomial.polynomial.polyval2d
+"Evaluate a 3-D polynomial at points (x, y, z).",numpy.polynomial.polynomial.polyval3d
+"Evaluate a 2-D Chebyshev series at points (x, y).",numpy.polynomial.chebyshev.chebval2d
+"Evaluate a 3-D Chebyshev series at points (x, y, z).",numpy.polynomial.chebyshev.chebval3d
+Evaluate a 2-D polynomial on the Cartesian product of x and y.,numpy.polynomial.polynomial.polygrid2d
+Evaluate a 2-D Chebyshev series on the Cartesian product of x and y.,numpy.polynomial.chebyshev.chebgrid2d
+Raise a Chebyshev series to a power.,numpy.polynomial.chebyshev.chebpow
+Evaluate a Chebyshev series at points x.,numpy.polynomial.chebyshev.chebval
+Divide one polynomial by another.,numpy.polynomial.polynomial.polydiv
+Divide one Chebyshev series by another.,numpy.polynomial.chebyshev.chebdiv
+Pseudo-Vandermonde matrix of given degree.,numpy.polynomial.chebyshev.chebvander
+"Evaluate a 3-D polynomial on the Cartesian product of x, y and z.",numpy.polynomial.polynomial.polygrid3d
+Evaluate a polynomial specified by its roots at points x.,numpy.polynomial.polynomial.polyvalfromroots
+"Evaluate a 3-D Chebyshev series on the Cartesian product of x, y, and z.",numpy.polynomial.chebyshev.chebgrid3d
+Return the companion matrix of c.,numpy.polynomial.polynomial.polycompanion
+Compute the roots of a polynomial.,numpy.polynomial.polynomial.polyroots
+Compute the roots of a Chebyshev series.,numpy.polynomial.chebyshev.chebroots
+Generate a monic polynomial with given roots.,numpy.polynomial.polynomial.polyfromroots
+The weight function of the Chebyshev polynomials.,numpy.polynomial.chebyshev.chebweight
+Least-squares fit of a polynomial to data.,numpy.polynomial.polynomial.polyfit
+Returns an array representing a linear polynomial.,numpy.polynomial.polynomial.polyline
+Chebyshev points of the first kind.,numpy.polynomial.chebyshev.chebpts1
+Remove “small” “trailing” coefficients from a polynomial.,numpy.polynomial.polynomial.polytrim
+Chebyshev series whose graph is a straight line.,numpy.polynomial.chebyshev.chebline
+Remove “small” “trailing” coefficients from a polynomial.,numpy.polynomial.chebyshev.chebtrim
+Interpolate a function at the Chebyshev points of the first kind.,numpy.polynomial.chebyshev.chebinterpolate
+Convert a Chebyshev series to a polynomial.,numpy.polynomial.chebyshev.cheb2poly
+Chebyshev points of the second kind.,numpy.polynomial.chebyshev.chebpts2
+Convert a polynomial to a Chebyshev series.,numpy.polynomial.chebyshev.poly2cheb
+Return the scaled companion matrix of c.,numpy.polynomial.chebyshev.chebcompanion
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.hermite.hermone
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.hermite.hermx
+Evaluate a polynomial at specific values.,numpy.polyval
+Gauss-Chebyshev quadrature.,numpy.polynomial.chebyshev.chebgauss
+Return argument as a list of 1-d arrays.,numpy.polynomial.polyutils.as_series
+Pseudo-Vandermonde matrix of given degrees.,numpy.polynomial.polynomial.polyvander3d
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.hermite.hermzero
+A one-dimensional polynomial class.,numpy.poly1d
+Multiply a Hermite series by x.,numpy.polynomial.hermite.hermmulx
+Evaluate an Hermite series at points x.,numpy.polynomial.hermite.hermval
+Find the coefficients of a polynomial with the given sequence of roots.,numpy.poly
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.legendre.legdomain
+Issued by chebfit when the design matrix is rank deficient.,numpy.polynomial.polyutils.RankWarning
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.legendre.legzero
+Subtract one Hermite series from another.,numpy.polynomial.hermite.hermsub
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.legendre.legone
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.legendre.legx
+Least squares polynomial fit.,numpy.polyfit
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.laguerre.lagdomain
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.laguerre.lagzero
+"Evaluate a 2-D Hermite series at points (x, y).",numpy.polynomial.hermite.hermval2d
+Return the derivative of the specified order of a polynomial.,numpy.polyder
+Apply linear map to input points.,numpy.polynomial.polyutils.mapdomain
+Raise a Hermite series to a power.,numpy.polynomial.hermite.hermpow
+Return a domain suitable for given abscissae.,numpy.polynomial.polyutils.getdomain
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.hermite_e.hermezero
+Evaluate a 2-D Hermite series on the Cartesian product of x and y.,numpy.polynomial.hermite.hermgrid2d
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.hermite_e.hermeone
+Subtract one Legendre series from another.,numpy.polynomial.legendre.legsub
+Find the sum of two polynomials.,numpy.polyadd
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.laguerre.lagone
+"Evaluate a 3-D Hermite series on the Cartesian product of x, y, and z.",numpy.polynomial.hermite.hermgrid3d
+Raise a Legendre series to a power.,numpy.polynomial.legendre.legpow
+"Issued by , when the Vandermonde matrix is rank deficient.",numpy.RankWarning
+Add one Laguerre series to another.,numpy.polynomial.laguerre.lagadd
+Multiply a Laguerre series by x.,numpy.polynomial.laguerre.lagmulx
+Add one Hermite series to another.,numpy.polynomial.hermite_e.hermeadd
+Divide one Legendre series by another.,numpy.polynomial.legendre.legdiv
+Evaluate a Legendre series at points x.,numpy.polynomial.legendre.legval
+Integrate a Hermite series.,numpy.polynomial.hermite.hermint
+Raise a Laguerre series to a power.,numpy.polynomial.laguerre.lagpow
+Return the scaled companion matrix of c.,numpy.polynomial.hermite.hermcompanion
+"Evaluate a 3-D Laguerre series at points (x, y, z).",numpy.polynomial.laguerre.lagval3d
+"Evaluate a 2-D HermiteE series at points (x, y).",numpy.polynomial.hermite_e.hermeval2d
+"Evaluate a 3-D Hermite_e series at points (x, y, z).",numpy.polynomial.hermite_e.hermeval3d
+"Evaluate a 2-D Laguerre series at points (x, y).",numpy.polynomial.laguerre.lagval2d
+Integrate a Legendre series.,numpy.polynomial.legendre.legint
+Pseudo-Vandermonde matrix of given degree.,numpy.polynomial.laguerre.lagvander
+Compute the roots of a HermiteE series.,numpy.polynomial.hermite_e.hermeroots
+Convert a polynomial to a Laguerre series.,numpy.polynomial.laguerre.poly2lag
+Convert a polynomial to a Hermite series.,numpy.polynomial.hermite_e.poly2herme
+Return the scaled companion matrix of c.,numpy.polynomial.legendre.legcompanion
+Pseudo-Vandermonde matrix of given degree.,numpy.polynomial.hermite_e.hermevander
+Weight function of the Legendre polynomials.,numpy.polynomial.legendre.legweight
+Remove “small” “trailing” coefficients from a polynomial.,numpy.polynomial.laguerre.lagtrim
+Gauss-Legendre quadrature.,numpy.polynomial.legendre.leggauss
+Compute the roots of a Laguerre series.,numpy.polynomial.laguerre.lagroots
+Convert a Laguerre series to a polynomial.,numpy.polynomial.laguerre.lag2poly
+Laguerre series whose graph is a straight line.,numpy.polynomial.laguerre.lagline
+Hermite series whose graph is a straight line.,numpy.polynomial.hermite_e.hermeline
+Remove “small” “trailing” coefficients from a polynomial.,numpy.polynomial.hermite_e.hermetrim
+Convert a Hermite series to a polynomial.,numpy.polynomial.hermite_e.herme2poly
+Least squares fit of Laguerre series to data.,numpy.polynomial.laguerre.lagfit
+Least squares fit of Hermite series to data.,numpy.polynomial.hermite_e.hermefit
+Return the scaled companion matrix of c.,numpy.polynomial.hermite_e.hermecompanion
+Return the companion matrix of c.,numpy.polynomial.laguerre.lagcompanion
+Legendre series whose graph is a straight line.,numpy.polynomial.legendre.legline
+Weight function of the Hermite_e polynomials.,numpy.polynomial.hermite_e.hermeweight
+Convert a Legendre series to a polynomial.,numpy.polynomial.legendre.leg2poly
+Weight function of the Laguerre polynomials.,numpy.polynomial.laguerre.lagweight
+Gauss-Laguerre quadrature.,numpy.polynomial.laguerre.laggauss
+Gauss-HermiteE quadrature.,numpy.polynomial.hermite_e.hermegauss
+Pseudo-Vandermonde matrix of given degrees.,numpy.polynomial.laguerre.lagvander3d
+Pseudo-Vandermonde matrix of given degrees.,numpy.polynomial.laguerre.lagvander2d
+Remove “small” “trailing” coefficients from a polynomial.,numpy.polynomial.legendre.legtrim
+Least squares fit of Legendre series to data.,numpy.polynomial.legendre.legfit
+Pseudo-Vandermonde matrix of given degrees.,numpy.polynomial.hermite_e.hermevander3d
+Generate a Laguerre series with given roots.,numpy.polynomial.laguerre.lagfromroots
+Pseudo-Vandermonde matrix of given degrees.,numpy.polynomial.hermite_e.hermevander2d
+Generate a HermiteE series with given roots.,numpy.polynomial.hermite_e.hermefromroots
+Convert a polynomial to a Hermite series.,numpy.polynomial.hermite.poly2herm
+Pseudo-Vandermonde matrix of given degrees.,numpy.polynomial.legendre.legvander2d
+Differentiate a Laguerre series.,numpy.polynomial.laguerre.lagder
+Integrate a Laguerre series.,numpy.polynomial.laguerre.lagint
+Pseudo-Vandermonde matrix of given degrees.,numpy.polynomial.legendre.legvander3d
+Convert a Hermite series to a polynomial.,numpy.polynomial.hermite.herm2poly
+Pseudo-Vandermonde matrix of given degree.,numpy.polynomial.legendre.legvander
+Integrate a Hermite_e series.,numpy.polynomial.hermite_e.hermeint
+Differentiate a Hermite_e series.,numpy.polynomial.hermite_e.hermeder
+Hermite series whose graph is a straight line.,numpy.polynomial.hermite.hermline
+"Evaluate a 3-D Laguerre series on the Cartesian product of x, y, and z.",numpy.polynomial.laguerre.laggrid3d
+Remove “small” “trailing” coefficients from a polynomial.,numpy.polynomial.hermite.hermtrim
+"Evaluate a 3-D HermiteE series on the Cartesian product of x, y, and z.",numpy.polynomial.hermite_e.hermegrid3d
+Compute the roots of a Legendre series.,numpy.polynomial.legendre.legroots
+Evaluate a 2-D Laguerre series on the Cartesian product of x and y.,numpy.polynomial.laguerre.laggrid2d
+Least squares fit of Hermite series to data.,numpy.polynomial.hermite.hermfit
+Generate a Legendre series with given roots.,numpy.polynomial.legendre.legfromroots
+Evaluate a 2-D HermiteE series on the Cartesian product of x and y.,numpy.polynomial.hermite_e.hermegrid2d
+Evaluate a Laguerre series at points x.,numpy.polynomial.laguerre.lagval
+Raise a Hermite series to a power.,numpy.polynomial.hermite_e.hermepow
+Evaluate an HermiteE series at points x.,numpy.polynomial.hermite_e.hermeval
+Gauss-Hermite quadrature.,numpy.polynomial.hermite.hermgauss
+Pseudo-Vandermonde matrix of given degrees.,numpy.polynomial.hermite.hermvander3d
+"Evaluate a 3-D Legendre series on the Cartesian product of x, y, and z.",numpy.polynomial.legendre.leggrid3d
+Differentiate a Legendre series.,numpy.polynomial.legendre.legder
+Weight function of the Hermite polynomials.,numpy.polynomial.hermite.hermweight
+Evaluate a 2-D Legendre series on the Cartesian product of x and y.,numpy.polynomial.legendre.leggrid2d
+Divide one Laguerre series by another.,numpy.polynomial.laguerre.lagdiv
+Convert a polynomial to a Legendre series.,numpy.polynomial.legendre.poly2leg
+Divide one Hermite series by another.,numpy.polynomial.hermite_e.hermediv
+Pseudo-Vandermonde matrix of given degree.,numpy.polynomial.hermite.hermvander
+"Evaluate a 3-D Legendre series at points (x, y, z).",numpy.polynomial.legendre.legval3d
+Pseudo-Vandermonde matrix of given degrees.,numpy.polynomial.hermite.hermvander2d
+Multiply one Laguerre series by another.,numpy.polynomial.laguerre.lagmul
+Multiply one Hermite series by another.,numpy.polynomial.hermite_e.hermemul
+"Evaluate a 2-D Legendre series at points (x, y).",numpy.polynomial.legendre.legval2d
+Multiply a Hermite series by x.,numpy.polynomial.hermite_e.hermemulx
+Compute the roots of a Hermite series.,numpy.polynomial.hermite.hermroots
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.laguerre.lagx
+Subtract one Laguerre series from another.,numpy.polynomial.laguerre.lagsub
+Generate a Hermite series with given roots.,numpy.polynomial.hermite.hermfromroots
+Subtract one Hermite series from another.,numpy.polynomial.hermite_e.hermesub
+Difference (subtraction) of two polynomials.,numpy.polysub
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.hermite_e.hermex
+Differentiate a Hermite series.,numpy.polynomial.hermite.hermder
+Multiply one Legendre series by another.,numpy.polynomial.legendre.legmul
+Multiply a Legendre series by x.,numpy.polynomial.legendre.legmulx
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.hermite_e.hermedomain
+Linear map parameters between domains.,numpy.polynomial.polyutils.mapparms
+Returns the quotient and remainder of polynomial division.,numpy.polydiv
+"Evaluate a 3-D Hermite series at points (x, y, z).",numpy.polynomial.hermite.hermval3d
+Return an antiderivative (indefinite integral) of a polynomial.,numpy.polyint
+Add one Legendre series to another.,numpy.polynomial.legendre.legadd
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.hermite.hermdomain
+Pseudo-Vandermonde matrix of given degrees.,numpy.polynomial.chebyshev.chebvander3d
+Return the roots of a polynomial with coefficients given in p.,numpy.roots
+Remove “small” “trailing” coefficients from a polynomial.,numpy.polynomial.polyutils.trimcoef
+Remove small Poly series coefficients.,numpy.polynomial.polyutils.trimseq
+Add one Hermite series to another.,numpy.polynomial.hermite.hermadd
+Divide one Hermite series by another.,numpy.polynomial.hermite.hermdiv
+Pseudo-Vandermonde matrix of given degrees.,numpy.polynomial.polynomial.polyvander2d
+Multiply one Hermite series by another.,numpy.polynomial.hermite.hermmul
+Pseudo-Vandermonde matrix of given degrees.,numpy.polynomial.chebyshev.chebvander2d
+Vandermonde matrix of given degree.,numpy.polynomial.polynomial.polyvander
+Generate a Chebyshev series with given roots.,numpy.polynomial.chebyshev.chebfromroots
+Integrate a polynomial.,numpy.polynomial.polynomial.polyint
+Integrate a Chebyshev series.,numpy.polynomial.chebyshev.chebint
+Differentiate a polynomial.,numpy.polynomial.polynomial.polyder
+Differentiate a Chebyshev series.,numpy.polynomial.chebyshev.chebder
+Multiply one polynomial by another.,numpy.polynomial.polynomial.polymul
+Multiply one Chebyshev series by another.,numpy.polynomial.chebyshev.chebmul
+Multiply a polynomial by x.,numpy.polynomial.polynomial.polymulx
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.chebyshev.chebzero
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.chebyshev.chebdomain
+Subtract one polynomial from another.,numpy.polynomial.polynomial.polysub
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.polynomial.polynomial.polydomain
+Multiply a Chebyshev series by x.,numpy.polynomial.chebyshev.chebmulx
+Subtract one Chebyshev series from another.,numpy.polynomial.chebyshev.chebsub
+Add one Chebyshev series to another.,numpy.polynomial.chebyshev.chebadd
+Add one polynomial to another.,numpy.polynomial.polynomial.polyadd
+Return self^value.,numpy.ma.MaskedArray.__xor__
+Return value&self.,numpy.ma.MaskedArray.__rand__
+Return value>>self.,numpy.ma.MaskedArray.__rrshift__
+Return self|value.,numpy.ma.MaskedArray.__or__
+"Return divmod(value, self).",numpy.ma.MaskedArray.__rdivmod__
+Return self&value.,numpy.ma.MaskedArray.__and__
+"Return divmod(self, value).",numpy.ma.MaskedArray.__divmod__
+Return the sum of the array elements over the given axis.,numpy.ma.MaskedArray.sum
+Return value%self.,numpy.ma.MaskedArray.__rmod__
+"Subtract self from other, and return a new masked array.",numpy.ma.MaskedArray.__rsub__
+Return self%value.,numpy.ma.MaskedArray.__mod__
+"Divide self into other, and return a new masked array.",numpy.ma.MaskedArray.__rfloordiv__
+"Add self to other, and return a new masked array.",numpy.ma.MaskedArray.__add__
+,numpy.ma.MaskedArray.__abs__
+"Add other to self, and return a new masked array.",numpy.ma.MaskedArray.__radd__
+View of the transposed array.,numpy.ma.MaskedArray.T
+"Returns array of indices of the maximum values along the given axis.
+Masked values are treated as if they had the value fill_value.",numpy.ma.MaskedArray.argmax
+"Dump a pickle of the array to the specified file.
+The array can be read back with pickle.load or numpy.load.",numpy.ma.MaskedArray.dump
+Fill the array with a scalar value.,numpy.ma.MaskedArray.fill
+"Return specified diagonals. In NumPy 1.9 the returned array is a
+read-only view instead of a copy as in previous NumPy versions.  In
+a future version the read-only restriction will be removed.",numpy.ma.MaskedArray.diagonal
+"Return the fractional and integral parts of an array, element-wise.",numpy.modf
+"Returns x1 * 2**x2, element-wise.",numpy.ldexp
+"Change the sign of x1 to that of x2, element-wise.",numpy.copysign
+Return the distance between x and the nearest adjacent number.,numpy.spacing
+Element-wise maximum of array elements.,numpy.fmax
+Return the data portion of the masked array as a hierarchical Python list.,numpy.ma.MaskedArray.tolist
+Mask an array where less than or equal to a given value.,numpy.ma.masked_less_equal
+"Return a view of the array with , and , interchanged.",numpy.ma.MaskedArray.swapaxes
+"Return the mask of a masked array, or full boolean array of False.",numpy.ma.getmaskarray
+Test element-wise for NaN and return result as a boolean array.,numpy.isnan
+"Returns a 1D version of self, as a view.",numpy.ma.MaskedArray.ravel
+Test element-wise for finiteness (not infinity and not Not a Number).,numpy.isfinite
+"A compatibility alias for ,, with exactly the same behavior.",numpy.ma.MaskedArray.tostring
+Compute the truth value of NOT x element-wise.,numpy.logical_not
+Translate slice objects to concatenation along the first axis.,numpy.ma.mr_
+Compute the truth value of x1 AND x2 element-wise.,numpy.logical_and
+Return all the non-masked data as a 1-D array.,numpy.ma.MaskedArray.compressed
+Swap the bytes of the array elements,numpy.ma.MaskedArray.byteswap
+Transforms a masked array into a flexible-type array.,numpy.ma.MaskedArray.toflex
+"Raises an AssertionError if two objects are not equal up to desired
+tolerance.",numpy.testing.assert_allclose
+Return (x1 == x2) element-wise.,numpy.equal
+"Efficient multi-dimensional iterator object to iterate over arrays.
+To get started using this object, see the
+,.",numpy.nditer
+Mask an array where equal to a given value.,numpy.ma.masked_equal
+Construct an open mesh from multiple sequences.,numpy.ix_
+Return the truth value of (x1 <= x2) element-wise.,numpy.less_equal
+Mask an array where greater than or equal to a given value.,numpy.ma.masked_greater_equal
+Return the truth value of (x1 < x2) element-wise.,numpy.less
+"Copy of the array, cast to a specified type.",numpy.ma.MaskedArray.astype
+Convert the input to a masked array of the given data-type.,numpy.ma.asarray
+Return (x1 != x2) element-wise.,numpy.not_equal
+Return a view of the MaskedArray data.,numpy.ma.MaskedArray.view
+"Compute the qth quantile of the data along the specified axis,
+while ignoring nan values.
+Returns the qth quantile(s) of the array elements.",numpy.nanquantile
+Join a sequence of arrays along a new axis.,numpy.ma.stack
+Return the real part of the complex argument.,numpy.real
+Return the imaginary part of the complex argument.,numpy.imag
+Fill the array with a scalar value.,numpy.ndarray.fill
+Shift the bits of an integer to the left.,numpy.left_shift
+Return the truth value of (x1 > x2) element-wise.,numpy.greater
+"Return a flat iterator, or set a flattened version of self to value.",numpy.ma.MaskedArray.flat
+alias of ,numpy.ma.masked_array
+The real part of the masked array.,numpy.ma.MaskedArray.real
+Shift the bits of an integer to the right.,numpy.right_shift
+,numpy.ma.MaskedArray.__array_priority__
+Evaluates the Einstein summation convention on the operands.,numpy.einsum
+Range of values (maximum - minimum) along an axis.,numpy.ptp
+Number of array dimensions.,numpy.ma.MaskedArray.ndim
+Unpacks elements of a uint8 array into a binary-valued output array.,numpy.unpackbits
+Convert angles from radians to degrees.,numpy.rad2deg
+Base object if memory is from some other object.,numpy.ndarray.base
+The imaginary part of the masked array.,numpy.ma.MaskedArray.imag
+Tuple of array dimensions.,numpy.ma.MaskedArray.shape
+Return selected slices of an array along given axis.,numpy.compress
+Length of one array element in bytes.,numpy.ma.MaskedArray.itemsize
+"Remove axes of length one from ,.",numpy.squeeze
+Compute the bit-wise AND of two arrays element-wise.,numpy.bitwise_and
+Convert angles from radians to degrees.,numpy.degrees
+Copy an element of an array to a standard Python scalar and return it.,numpy.ndarray.item
+Convert angles from degrees to radians.,numpy.radians
+Information about the memory layout of the array.,numpy.ma.MaskedArray.flags
+Inverse hyperbolic tangent element-wise.,numpy.arctanh
+Repeat elements of an array.,numpy.repeat
+Data-type of the array’s elements.,numpy.ma.MaskedArray.dtype
+Stack arrays in sequence depth wise (along third axis).,numpy.dstack
+Base object if memory is from some other object.,numpy.ma.MaskedArray.base
+Replaces specified elements of an array with given values.,numpy.put
+Split array into multiple sub-arrays along the 3rd axis (depth).,numpy.dsplit
+"Load arrays or pickled objects from ,, , or pickled files.",numpy.load
+"Inverse hyperbolic cosine, element-wise.",numpy.arccosh
+"Trigonometric inverse tangent, element-wise.",numpy.arctan
+Inverse hyperbolic sine element-wise.,numpy.arcsinh
+"Trigonometric inverse cosine, element-wise.",numpy.arccos
+"Returns the greatest common divisor of , and ",numpy.gcd
+"Return the cube-root of an array, element-wise.",numpy.cbrt
+"Return the reciprocal of the argument, element-wise.",numpy.reciprocal
+Split an array into multiple sub-arrays vertically (row-wise).,numpy.vsplit
+Split an array into multiple sub-arrays horizontally (column-wise).,numpy.hsplit
+Translates slice objects to concatenation along the second axis.,numpy.c_
+Return the element-wise square of the input.,numpy.square
+"Natural logarithm, element-wise.",numpy.log
+A 1-D iterator over the array.,numpy.ndarray.flat
+"Return the complex conjugate, element-wise.",numpy.conjugate
+"Calculate , for all elements in the array.",numpy.expm1
+Stack arrays in sequence vertically (row wise).,numpy.vstack
+Calculate the exponential of all elements in the input array.,numpy.exp
+Return a new array with the specified shape.,numpy.resize
+Change shape and size of array in-place.,numpy.ndarray.resize
+Format a floating-point scalar as a decimal string in scientific notation.,numpy.format_float_scientific
+"Return elements chosen from , or , depending on ,.",numpy.where
+Calculate the absolute value element-wise.,numpy.absolute
+Compute the absolute values element-wise.,numpy.fabs
+Compute the Heaviside step function.,numpy.heaviside
+Raises an AssertionError if two objects are not equal.,numpy.testing.assert_equal
+Return the dot product of two vectors.,numpy.vdot
+Return element-wise quotient and remainder simultaneously.,numpy.divmod
+Returns a field of the given array as a certain type.,numpy.ndarray.getfield
+"Raises an AssertionError if two objects are not equal up to desired
+precision.",numpy.testing.assert_array_almost_equal
+"Raises an AssertionError if two items are not equal up to desired
+precision.",numpy.testing.assert_almost_equal
+"Raises an AssertionError if two items are not equal up to significant
+digits.",numpy.testing.assert_approx_equal
+"Test if two objects are equal, and print an error message if test fails.",numpy.testing.print_assert_equal
+Fail unless the given callable throws the specified warning.,numpy.testing.assert_warns
+Test if two strings are equal.,numpy.testing.assert_string_equal
+"Assert that works in release mode.
+Accepts callable msg to allow deferring evaluation until failure.",numpy.testing.assert_
+Signals to nose that this function is or is not a test.,numpy.testing.dec.setastest
+The required alignment (bytes) of this data-type according to the compiler.,numpy.dtype.alignment
+Fail if the given callable produces any warnings.,numpy.testing.assert_no_warnings
+Filter deprecation warnings while running the test suite.,numpy.testing.dec.deprecated
+Fail if the given callable produces any reference cycles.,numpy.testing.assert_no_gc_cycles
+Apply a decorator to all methods in a class matching a regular expression.,numpy.testing.decorate_methods
+Label a test as ‘slow’.,numpy.testing.dec.slow
+alias of ,numpy.testing.Tester
+Make function raise KnownFailureException exception if given condition is true.,numpy.testing.dec.knownfailureif
+"Context manager and decorator doing much the same as
+,.",numpy.testing.suppress_warnings
+"Boolean indicating whether the dtype is a struct which maintains
+field alignment. This flag is sticky, so when combining multiple
+structs together, it is preserved and produces new dtypes which
+are also aligned.",numpy.dtype.isalignedstruct
+Run doctests found in the given file.,numpy.testing.rundocs
+Run a test module.,numpy.testing.run_module_suite
+Return elapsed time for executing code in the namespace of the caller.,numpy.testing.measure
+Convert the input to an array.,numpy.asarray
+Append a new recording filter or apply it if the state is entered.,numpy.testing.suppress_warnings.record
+Mixin defining all operator special methods using __array_ufunc__.,numpy.lib.mixins.NDArrayOperatorsMixin
+Return the angle of the complex argument.,numpy.angle
+Return key in self.,numpy.ndarray.__contains__
+Context manager that resets warning registry for catching warnings,numpy.testing.clear_and_catch_warnings
+Make function raise SkipTest exception if a given condition is true.,numpy.testing.dec.skipif
+Compute the histogram of a dataset.,numpy.histogram
+"Fail unless an exception of class exception_class and with message that
+matches expected_regexp is thrown by callable when invoked with arguments
+args and keyword arguments kwargs.",numpy.testing.assert_raises_regex
+"Fail unless an exception of class exception_class is thrown
+by callable when invoked with arguments args and keyword
+arguments kwargs. If a different type of exception is
+thrown, it will not be caught, and the test case will be
+deemed to have suffered an error, exactly as for an
+unexpected exception.",numpy.testing.assert_raises
+Load data from a text file.,numpy.loadtxt
+"Raises an AssertionError if two array_like objects are not ordered by less
+than.",numpy.testing.assert_array_less
+Raises an AssertionError if two array_like objects are not equal.,numpy.testing.assert_array_equal
+Cross-correlation of two 1-dimensional sequences.,numpy.correlate
+Format a floating-point scalar as a decimal string in positional notation.,numpy.format_float_positional
+Check that all items of arrays differ in at most N Units in the Last Place.,numpy.testing.assert_array_max_ulp
+Compare two arrays relatively to their spacing.,numpy.testing.assert_array_almost_equal_nulp
+Returns the element-wise remainder of division.,numpy.fmod
+Compute the variance along the specified axis.,numpy.var
+Returns the element-wise remainder of division.,numpy.mod
+"First array elements raised to powers from second array, element-wise.",numpy.power
+Return the product of array elements over a given axis.,numpy.prod
+"Returns the discrete, linear convolution of two one-dimensional sequences.",numpy.convolve
+"Return the largest integer smaller or equal to the division of the inputs.
+It is equivalent to the Python , operator and pairs with the
+Python , (,), function so that ,
+up to roundoff.",numpy.floor_divide
+Return numbers spaced evenly on a log scale.,numpy.logspace
+"First array elements raised to powers from second array, element-wise.",numpy.float_power
+ instance which returns a dense multi-dimensional “meshgrid”.,numpy.mgrid
+"Numerical positive, element-wise.",numpy.positive
+"Numerical negative, element-wise.",numpy.negative
+Divide arguments element-wise.,numpy.true_divide
+Return numbers spaced evenly on a log scale (a geometric progression).,numpy.geomspace
+Logarithm of the sum of exponentiations of the inputs.,numpy.logaddexp
+Multiply arguments element-wise.,numpy.multiply
+Add arguments element-wise.,numpy.add
+"Return the floor of the input, element-wise.",numpy.floor
+Inner product of two arrays.,numpy.inner
+,numpy.lib.arraysetops
+"Modified Bessel function of the first kind, order 0.",numpy.i0
+"Dot product of two arrays. Specifically,",numpy.dot
+"Return the ceiling of the input, element-wise.",numpy.ceil
+Return Pearson product-moment correlation coefficients.,numpy.corrcoef
+Count number of occurrences of each value in array of non-negative ints.,numpy.bincount
+Compute the N-dimensional inverse discrete Fourier Transform.,numpy.fft.ifftn
+Compute the one-dimensional inverse discrete Fourier Transform.,numpy.fft.ifft
+Create a sliding window view into the array with the given window shape.,numpy.lib.stride_tricks.sliding_window_view
+Tuple of array dimensions.,numpy.ndarray.shape
+Broadcast the input shapes into a single shape.,numpy.broadcast_shapes
+Compute the N-dimensional discrete Fourier Transform.,numpy.fft.fftn
+Python buffer object pointing to the start of the array’s data.,numpy.ndarray.data
+Compute the weighted average along the specified axis.,numpy.average
+Compute the 2-dimensional discrete Fourier Transform.,numpy.fft.fft2
+Interpret the input as a matrix.,numpy.asmatrix
+Create an array from binary file data,numpy.core.records.fromfile
+"Build a matrix object from a string, nested sequence, or array.",numpy.bmat
+Matrix or vector norm.,numpy.linalg.norm
+"Returns a matrix from an array-like object, or from a string of data.
+A matrix is a specialized 2-D array that retains its 2-D nature
+through operations.  It has certain special operators, such as ,
+(matrix multiplication) and , (matrix power).",numpy.matrix
+Evaluate a piecewise-defined function.,numpy.piecewise
+Save an array to a text file.,numpy.savetxt
+Test whether any array element along a given axis evaluates to True.,numpy.any
+"Performs unbuffered in place operation on operand ‘a’ for elements
+specified by ‘indices’. For addition ufunc, this method is equivalent to
+,, except that results are accumulated for elements that
+are indexed more than once. For example, , will only
+increment the first element once because of buffering, whereas
+, will increment the first element twice.",numpy.ufunc.at
+Takes an arbitrary Python function and returns a NumPy ufunc.,numpy.frompyfunc
+Return the least-squares solution to a linear matrix equation.,numpy.linalg.lstsq
+Return a random matrix with data from the “standard normal” distribution.,numpy.matlib.randn
+Test whether all array elements along a given axis evaluate to True.,numpy.all
+"Apply the ufunc , to all pairs (a, b) with a in , and b in ,.",numpy.ufunc.outer
+Construct an array from data in a text or binary file.,numpy.fromfile
+Return a matrix of random values with given shape.,numpy.matlib.rand
+"Save several arrays into a single file in compressed , format.",numpy.savez_compressed
+Construct an array by executing a function over each coordinate.,numpy.fromfunction
+Performs a (local) reduce with specified slices over a single axis.,numpy.ufunc.reduceat
+Compute the (multiplicative) inverse of a matrix.,numpy.linalg.inv
+"Load data from a text file, with missing values handled as specified.",numpy.genfromtxt
+Generalized function class.,numpy.vectorize
+Compute the eigenvalues of a complex Hermitian or real symmetric matrix.,numpy.linalg.eigvalsh
+Repeat a 0-D to 2-D array or matrix MxN times.,numpy.matlib.repmat
+Accumulate the result of applying the operator to all elements.,numpy.ufunc.accumulate
+Return a contiguous flattened array.,numpy.ravel
+"Create a memory-map to an array stored in a , file on disk.",numpy.memmap
+Construct Python bytes containing the raw data bytes in the array.,numpy.ndarray.tobytes
+Put values into the destination array by matching 1d index and data slices.,numpy.put_along_axis
+Compute the eigenvalues of a general matrix.,numpy.linalg.eigvals
+Take values from the input array by matching 1d index and data slices.,numpy.take_along_axis
+"Counts the number of valid days between , and
+,, not including the day of ,.",numpy.busday_count
+Write array to a file as text or binary (default).,numpy.ndarray.tofile
+Return indices that are non-zero in the flattened version of a.,numpy.flatnonzero
+Returns the square identity matrix of given size.,numpy.matlib.identity
+Open a .npy file as a memory-mapped array.,numpy.lib.format.open_memmap
+"Save an array to a binary file in NumPy , format.",numpy.save
+"Calculates which of the given dates are valid days, and which are not.",numpy.is_busday
+"Return the eigenvalues and eigenvectors of a complex Hermitian
+(conjugate symmetric) or a real symmetric matrix.",numpy.linalg.eigh
+Return a copy of the array collapsed into one dimension.,numpy.ndarray.flatten
+Return a matrix with ones on the diagonal and zeros elsewhere.,numpy.matlib.eye
+,numpy.distutils.system_info.get_info
+Return the scalar dtype or NumPy equivalent of Python type of an object.,numpy.obj2sctype
+Definition of the core elements a generalized ufunc operates on.,numpy.ufunc.signature
+Return the Hanning window.,numpy.hanning
+,numpy.distutils.log.set_verbosity
+Reverse the order of elements in an array along the given axis.,numpy.flip
+Return a new array with the same shape and type as a given array.,numpy.empty_like
+Compute the eigenvalues and right eigenvectors of a square array.,numpy.linalg.eig
+Return the Kaiser window.,numpy.kaiser
+Return the Hamming window.,numpy.hamming
+Return a scalar type which is common to the input arrays.,numpy.common_type
+The identity value.,numpy.ufunc.identity
+"A business day calendar object that efficiently stores information
+defining valid days for the busday family of functions.",numpy.busdaycalendar
+Matrix of ones.,numpy.matlib.ones
+Gives a new shape to an array without changing its data.,numpy.reshape
+,numpy.distutils.exec_command
+"Return a new array of given shape and type, without initializing entries.",numpy.empty
+Create a data type object.,numpy.dtype
+Return the Blackman window.,numpy.blackman
+"An array object represents a multidimensional, homogeneous array
+of fixed-size items.  An associated data-type object describes the
+format of each element in the array (its byte-order, how many bytes it
+occupies in memory, whether it is an integer, a floating point number,
+or something else, etc.)",numpy.ndarray
+"Returns the type that results from applying the NumPy
+type promotion rules to the arguments.",numpy.result_type
+Returns a list with types grouped input->output.,numpy.ufunc.types
+"First adjusts the date to fall on a valid day according to
+the , rule, then applies offsets to the given dates
+counted in valid days.",numpy.busday_offset
+Compute the determinant of an array.,numpy.linalg.det
+Returns an array with axes transposed.,numpy.transpose
+"Return a matrix of given shape and type, filled with zeros.",numpy.matlib.zeros
+Return an array of ones with the same shape and type as a given array.,numpy.ones_like
+Methods,numpy.distutils.core.Extension
+The number of arguments.,numpy.ufunc.nargs
+"For scalar ,, returns the data type with the smallest size
+and smallest scalar kind which can hold its value.  For non-scalar
+array ,, returns the vector’s dtype unmodified.",numpy.min_scalar_type
+Find the unique elements of an array.,numpy.unique
+The number of types.,numpy.ufunc.ntypes
+"Returns the data type with the smallest size and smallest scalar
+kind to which both , and , may be safely cast.
+The returned data type is always considered “canonical”, this mainly
+means that the promoted dtype will always be in native byte order.",numpy.promote_types
+"Return a new array of given shape and type, filled with ones.",numpy.ones
+,numpy.distutils.ccompiler_opt
+Construct an ndarray that allows field access using attributes.,numpy.recarray
+New view of array with the same data.,numpy.ndarray.view
+Return the indices of the elements that are non-zero.,numpy.nonzero
+Expand the shape of an array.,numpy.expand_dims
+Get information about the step size of a date or time type.,numpy.datetime_data
+"Returns True if cast between data types can occur according to the
+casting rule.  If from is a scalar or array scalar, also returns
+True if the scalar value can be cast without overflow or truncation
+to an integer.",numpy.can_cast
+,numpy.distutils.ccompiler
+The number of outputs.,numpy.ufunc.nout
+Print or write to a file the source code for a NumPy object.,numpy.source
+Return an array of zeros with the same shape and type as a given array.,numpy.zeros_like
+"Return a new array of given shape and type, filled with zeros.",numpy.zeros
+The number of inputs.,numpy.ufunc.nin
+Put a value into a specified place in a field defined by a data-type.,numpy.ndarray.setfield
+alias of ,numpy.ma.MaskType
+Set the size of the buffer used in ufuncs.,numpy.setbufsize
+"Compute the qth percentile of the data along the specified axis,
+while ignoring nan values.",numpy.nanpercentile
+Test whether each element of a 1-D array is also present in a second array.,numpy.in1d
+Swap the bytes of the array elements,numpy.ndarray.byteswap
+Find the intersection of two arrays.,numpy.intersect1d
+"Copies values from one array to another, broadcasting as necessary.",numpy.copyto
+Compute the square root of x.,numpy.emath.sqrt
+Do a keyword search on docstrings.,numpy.lookfor
+Set how floating-point errors are handled.,numpy.seterr
+"Return the numeric string left-filled with zeros in a string of
+length ,.",numpy.char.chararray.zfill
+Return the current callback function used on floating-point errors.,numpy.geterrcall
+Compute tensor dot product along specified axes.,numpy.tensordot
+Return element-wise string concatenation for two arrays of str or unicode.,numpy.char.add
+"Create a NumPy array from an object implementing the ,
+protocol. Generally, the returned NumPy array is a read-only view
+of the input object. See , and , for more details.",numpy.from_dlpack
+Reset the broadcasted result’s iterator(s).,numpy.broadcast.reset
+Take log base n of x.,numpy.emath.logn
+"Perform an indirect partition along the given axis using the
+algorithm specified by the , keyword. It returns an array of
+indices of the same shape as , that index data along the given
+axis in partitioned order.",numpy.argpartition
+Find the set exclusive-or of two arrays.,numpy.setxor1d
+"Return x to the power p, (x**p).",numpy.emath.power
+"Return (a % i), that is pre-Python 2.6 string formatting
+(interpolation), element-wise for a pair of array_likes of str
+or unicode.",numpy.char.mod
+Returns the transpose of the matrix.,numpy.matrix.T
+"Return , as an , object.",numpy.matrix.A
+Compute the inverse cosine of x.,numpy.emath.arccos
+Set the object that defines floating-point error handling.,numpy.seterrobj
+"Return a copy of , with only the first character of each element
+capitalized.",numpy.char.capitalize
+"Return the indices of the maximum values in the specified axis ignoring
+NaNs. For all-NaN slices , is raised. Warning: the
+results cannot be trusted if a slice contains only NaNs and -Infs.",numpy.nanargmax
+Compute the one-dimensional discrete Fourier Transform for real input.,numpy.fft.rfft
+Return the current object that defines floating-point error handling.,numpy.geterrobj
+"Return a copy of each string element where all tab characters are
+replaced by one or more spaces.",numpy.char.expandtabs
+Return the binary representation of the input number as a string.,numpy.binary_repr
+Return an array with the elements converted to lowercase.,numpy.char.lower
+"Return a string which is the concatenation of the strings in the
+sequence ,.",numpy.char.join
+"The inverse of ,. Although identical for even-length ,, the
+functions differ by one sample for odd-length ,.",numpy.fft.ifftshift
+Determines whether the given object represents a scalar data-type.,numpy.issctype
+Compute the N-dimensional discrete Fourier Transform for real input.,numpy.fft.rfftn
+"Compute the variance along the specified axis, while ignoring NaNs.",numpy.nanvar
+Pointer to start of data.,numpy.generic.data
+"Return a new array of given shape and type, filled with ,.",numpy.full
+"Dictionary of named fields defined for this data type, or ,.",numpy.dtype.fields
+The number of elements in the gentype.,numpy.generic.size
+"Returns True if any of the elements of , evaluate to True.",numpy.ma.any
+Return the Discrete Fourier Transform sample frequencies.,numpy.fft.fftfreq
+Broadcast an array to a new shape.,numpy.broadcast_to
+Determine common type following standard coercion rules.,numpy.find_common_type
+The length of one element in bytes.,numpy.generic.itemsize
+"For each element in ,, return a copy with the leading characters
+removed.",numpy.char.lstrip
+"Create a ,.",numpy.core.defchararray.array
+"Return an array with the elements of , right-justified in a
+string of length ,.",numpy.char.rjust
+A 1-D view of the scalar.,numpy.generic.flat
+Integer indicating how this dtype relates to the built-in dtypes.,numpy.dtype.isbuiltin
+Find indices where elements of v should be inserted in a to maintain order.,numpy.ndarray.searchsorted
+Return the indices of unmasked elements that are not zero.,numpy.ma.nonzero
+"Return the indices for the upper-triangle of an (n, m) array.",numpy.triu_indices
+Compute the sign and (natural) logarithm of the determinant of an array.,numpy.linalg.slogdet
+Array priority.,numpy.generic.__array_priority__
+Return element-wise title cased version of string or unicode.,numpy.char.title
+"Returns dtype for the base element of the subarrays,
+regardless of their dimension or shape.",numpy.dtype.base
+Return an array with the elements converted to uppercase.,numpy.char.upper
+"Performs element-wise comparison of two string arrays using the
+comparison operator specified by ,.",numpy.char.compare_chararrays
+Integrate along the given axis using the composite trapezoidal rule.,numpy.trapz
+Return the cumulative product of the elements along the given axis.,numpy.ndarray.cumprod
+Return the minimum of an array or minimum along an axis.,numpy.amin
+Return a new masked array with the specified size and shape.,numpy.ma.resize
+Fill the main diagonal of the given array of any dimensionality.,numpy.fill_diagonal
+"Returns an array with the number of non-overlapping occurrences of
+substring , in the range [,, ,].",numpy.char.count
+Returns True if all elements evaluate to True.,numpy.ndarray.all
+An N-dimensional iterator object to index arrays.,numpy.ndindex
+"Like ,, but raises , when the substring is not found.",numpy.char.index
+"Returns True if any of the elements of , evaluate to True.",numpy.ndarray.any
+"Remove axes of length one from ,.",numpy.ma.squeeze
+"For each element, return the lowest index in the string where
+substring , is found.",numpy.char.find
+"Split an array into multiple sub-arrays as views into ,.",numpy.split
+"Returns a boolean array which is , where the string element
+in , ends with ,, otherwise ,.",numpy.char.endswith
+Return (x1 < x2) element-wise.,numpy.char.less
+Return self<value.,numpy.dtype.__lt__
+"Returns true for each element if the element is a titlecased
+string and there is at least one character, false otherwise.",numpy.char.istitle
+Expand the shape of an array.,numpy.ma.expand_dims
+Return the normalized sinc function.,numpy.sinc
+"Return true for each element if all cased characters in the
+string are uppercase and there is at least one character, false
+otherwise.",numpy.char.isupper
+View inputs as arrays with at least three dimensions.,numpy.ma.atleast_3d
+Stack arrays in sequence horizontally (column wise).,numpy.ma.hstack
+Return len(a) element-wise.,numpy.char.str_len
+"Returns a boolean array which is , where the string element
+in , starts with ,, otherwise ,.",numpy.char.startswith
+Append values to the end of an array.,numpy.append
+"For each element, return True if there are only numeric
+characters in the element.",numpy.char.isnumeric
+"Returns true for each element if there are only whitespace
+characters in the string and there is at least one character,
+false otherwise.",numpy.char.isspace
+"For each element in ,, return the highest index in the string
+where substring , is found, such that , is contained
+within [,, ,].",numpy.char.rfind
+Stack arrays in sequence depth wise (along third axis).,numpy.ma.dstack
+"Create a ,.",numpy.char.array
+Roll array elements along a given axis.,numpy.roll
+Reverse the order of elements along axis 0 (up/down).,numpy.flipud
+Provides a convenient view on arrays of string and unicode values.,numpy.char.chararray
+Concatenate a sequence of arrays along the given axis.,numpy.ma.concatenate
+"Convert the input to a ,, copying the data only if
+necessary.",numpy.char.asarray
+Reverse the order of elements along axis 1 (left/right).,numpy.fliplr
+Split an array into multiple sub-arrays horizontally (column-wise).,numpy.ma.hsplit
+Stack arrays in sequence vertically (row wise).,numpy.ma.row_stack
+Generate a Vandermonde matrix.,numpy.vander
+"Return a parametrized wrapper around the , type.",numpy.ndarray.__class_getitem__
+Stack arrays in sequence vertically (row wise).,numpy.ma.vstack
+Construct a dtype description list from a given dtype.,numpy.ma.make_mask_descr
+Append values to the end of an array.,numpy.ma.append
+Stack 1-D arrays as columns into a 2-D array.,numpy.ma.column_stack
+Current mask.,numpy.ma.masked_array.mask
+"Like ,, but raises , when the substring , is
+not found.",numpy.char.rindex
+Multidimensional index iterator.,numpy.ma.ndenumerate
+Trim the leading and/or trailing zeros from a 1-D array or sequence.,numpy.trim_zeros
+Create a boolean mask from an array.,numpy.ma.make_mask
+Insert values along the given axis before the given indices.,numpy.insert
+Find the indices of the first and last unmasked values.,numpy.ma.flatnotmasked_edges
+"Returns a list of slices corresponding to the masked clumps of a 1-D array.
+(A “clump” is defined as a contiguous region of the array).",numpy.ma.clump_masked
+Mask columns of a 2D array that contain masked values.,numpy.ma.mask_cols
+Mask rows of a 2D array that contain masked values.,numpy.ma.mask_rows
+"Combine two masks with the , operator.",numpy.ma.mask_or
+"Return a boolean mask of the given shape, filled with False.",numpy.ma.make_mask_none
+Find contiguous unmasked data in a masked array.,numpy.ma.flatnotmasked_contiguous
+Mask rows and/or columns of a 2D array that contain masked values.,numpy.ma.mask_rowcols
+"Return list of slices corresponding to the unmasked clumps of a 1-D array.
+(A “clump” is defined as a contiguous region of the array).",numpy.ma.clump_unmasked
+Find the indices of the first and last unmasked values along an axis.,numpy.ma.notmasked_edges
+"Return a new array with sub-arrays along an axis deleted. For a one
+dimensional array, this returns those entries not returned by
+,.",numpy.delete
+Upper triangle of an array.,numpy.triu
+Find contiguous unmasked data in a masked array along the given axis.,numpy.ma.notmasked_contiguous
+"Returns true for each element if all cased characters in the
+string are lowercase and there is at least one cased character,
+false otherwise.",numpy.char.islower
+View inputs as arrays with at least two dimensions.,numpy.ma.atleast_2d
+Return the maximum of an array or maximum along an axis.,numpy.amax
+Convert inputs to arrays with at least one dimension.,numpy.ma.atleast_1d
+,numpy.lib.format.write_array_header_2_0
+Construct an array by repeating A the number of times given by reps.,numpy.tile
+Buffered iterator for big arrays.,numpy.lib.Arrayterator
+Create a two-dimensional array with the flattened input as a diagonal.,numpy.diagflat
+"Return the maximum of an array or maximum along an axis, ignoring any
+NaNs.  When all-NaN slices are encountered a , is
+raised and NaN is returned for that slice.",numpy.nanmax
+"For each element, return True if there are only decimal
+characters in the element.",numpy.char.isdecimal
+Lower triangle of an array.,numpy.tril
+An array with ones at and below the given diagonal and zeros elsewhere.,numpy.tri
+"Returns true for each element if all characters in the string are
+digits and there is at least one character, false otherwise.",numpy.char.isdigit
+Flat iterator object to iterate over arrays.,numpy.flatiter
+"Return minimum of an array or minimum along an axis, ignoring any NaNs.
+When all-NaN slices are encountered a , is raised and
+Nan is returned for that slice.",numpy.nanmin
+"Returns true for each element if all characters in the string are
+alphanumeric and there is at least one character, false otherwise.",numpy.char.isalnum
+"Returns true for each element if all characters in the string are
+alphabetic and there is at least one character, false otherwise.",numpy.char.isalpha
+Permute the dimensions of an array.,numpy.ma.transpose
+Create nditers for use in nested loops,numpy.nested_iters
+,numpy.ma.swapaxes
+Suppress whole rows of a 2-D array that contain masked values.,numpy.ma.compress_rows
+Returns an array containing the same data with a new shape.,numpy.ma.reshape
+"Return a parametrized wrapper around the , type.",numpy.number.__class_getitem__
+Return the minimum value that can be represented by the dtype of an object.,numpy.ma.maximum_fill_value
+Return the maximum value that can be represented by the dtype of an object.,numpy.ma.minimum_fill_value
+"If input is complex with all imaginary parts close to zero, return
+real parts.",numpy.real_if_close
+Return the default fill value for the argument object.,numpy.ma.default_fill_value
+"Set the filling value of a, if a is a masked array.",numpy.ma.set_fill_value
+"Suppress the rows and/or columns of a 2-D array that contain
+masked values.",numpy.ma.compress_rowcols
+Suppress whole columns of a 2-D array that contain masked values.,numpy.ma.compress_cols
+Return (x1 > x2) element-wise.,numpy.char.greater
+Return the product of the array elements over the given axis,numpy.ndarray.prod
+Return the gradient of an N-dimensional array.,numpy.gradient
+"Returns a 1D version of self, as a view.",numpy.ma.ravel
+"Return the common filling value of two masked arrays, if any.",numpy.ma.common_fill_value
+Return self<=value.,numpy.dtype.__le__
+Return the cumulative sum of the elements along the given axis.,numpy.ndarray.cumsum
+Compute the variance along the specified axis.,numpy.ma.var
+The differences between consecutive elements of an array.,numpy.ediff1d
+Compute the median along the specified axis.,numpy.ma.median
+Return the cumulative sum of the array elements over the given axis.,numpy.ma.cumsum
+Return the product of the array elements over the given axis.,numpy.ma.prod
+"Return the complex conjugate, element-wise.",numpy.ma.conjugate
+Return the sum of the array elements over the given axis.,numpy.ma.sum
+Returns the standard deviation of the array elements along given axis.,numpy.ma.std
+Calculate the n-th discrete difference along the given axis.,numpy.ma.diff
+Returns element-wise base array raised to power from second array.,numpy.ma.power
+Return an array representing the indices of a grid.,numpy.ma.indices
+Returns the average of the array elements along given axis.,numpy.ma.mean
+Estimate the covariance matrix.,numpy.ma.cov
+Return the cumulative product of the array elements over the given axis.,numpy.ma.cumprod
+Return Pearson product-moment correlation coefficients.,numpy.ma.corrcoef
+Return the weighted average of array over the given axis.,numpy.ma.average
+Return the minimum along a given axis.,numpy.ma.min
+Apply a function repeatedly over multiple axes.,numpy.ma.apply_over_axes
+Return a sorted copy of the masked array.,numpy.ma.sort
+Clip (limit) the values in an array.,numpy.ma.clip
+Compute the differences between consecutive elements of an array.,numpy.ma.ediff1d
+Return evenly spaced values within a given interval.,numpy.ma.arange
+Use an index array to construct a new array from a list of choices.,numpy.ma.choose
+Apply a function to 1-D slices along the given axis.,numpy.ma.apply_along_axis
+Least squares polynomial fit.,numpy.ma.polyfit
+Returns True if two arrays are element-wise equal within a tolerance.,numpy.ma.allclose
+"Return a copy of a, rounded to ‘decimals’ places.",numpy.ma.round
+"Return True if all entries of a and b are equal, using
+fill_value as a truth value where either or both are masked.",numpy.ma.allequal
+,numpy.ma.trace
+Compute the outer product of two vectors.,numpy.ma.outerproduct
+Round an array to the given number of decimals.,numpy.ma.around
+Generate a Vandermonde matrix.,numpy.ma.vander
+Inner product of two arrays.,numpy.ma.innerproduct
+Inner product of two arrays.,numpy.ma.inner
+Return the identity array.,numpy.ma.identity
+Compute the outer product of two vectors.,numpy.ma.outer
+"Return an ndarray of indices that sort the array along the
+specified axis.  Masked values are filled beforehand to
+,.",numpy.ma.argsort
+"Returns array of indices of the maximum values along the given axis.
+Masked values are treated as if they had the value fill_value.",numpy.ma.argmax
+"Compute the anomalies (deviations from the arithmetic mean)
+along the given axis.",numpy.ma.anom
+Return the dot product of two arrays.,numpy.ma.dot
+Extract a diagonal or construct a diagonal array.,numpy.ma.diag
+Return the maximum along a given axis.,numpy.ma.max
+Return array of indices to the minimum values along the given axis.,numpy.ma.argmin
+"Compute the anomalies (deviations from the arithmetic mean)
+along the given axis.",numpy.ma.anomalies
+"Convert the input to a ,, copying the data only if
+necessary.",numpy.core.defchararray.asarray
+"Return (maximum - minimum) along the given dimension
+(i.e. peak-to-peak value).",numpy.ma.ptp
+Return (x1 <= x2) element-wise.,numpy.char.less_equal
+Return the sum of the array elements over the given axis.,numpy.ndarray.sum
+Assemble an nd-array from nested lists of blocks.,numpy.block
+Return self>value.,numpy.dtype.__gt__
+"Return the cumulative sum of array elements over a given axis treating Not a
+Numbers (NaNs) as zero.  The cumulative sum does not change when NaNs are
+encountered and leading NaNs are replaced by zeros.",numpy.nancumsum
+Scalar method identical to the corresponding array attribute.,numpy.generic.setflags
+Returns the standard deviation of the array elements along given axis.,numpy.ndarray.std
+Return (x1 >= x2) element-wise.,numpy.char.greater_equal
+Change elements of an array based on conditional and input values.,numpy.place
+,numpy.generic.__setstate__
+Create a view into the array with the given shape and strides.,numpy.lib.stride_tricks.as_strided
+Return self>=value.,numpy.dtype.__ge__
+"Return , with each element rounded to the given number of decimals.",numpy.ndarray.round
+"Return the cumulative product of array elements over a given axis treating Not a
+Numbers (NaNs) as one.  The cumulative product does not change when NaNs are
+encountered and leading NaNs are replaced by ones.",numpy.nancumprod
+Return (x1 != x2) element-wise.,numpy.char.not_equal
+Generic Python-exception-derived object raised by linalg functions.,numpy.linalg.LinAlgError
+Helper for pickle.,numpy.generic.__reduce__
+"Return an array drawn from elements in choicelist, depending on conditions.",numpy.select
+"Return a parametrized wrapper around the , type.",numpy.dtype.__class_getitem__
+Return (x1 == x2) element-wise.,numpy.char.equal
+Scalar method identical to the corresponding array attribute.,numpy.generic.byteswap
+Create a record array from binary data,numpy.core.records.fromstring
+,numpy.dtype.__setstate__
+Create a recarray from a list of records in text form.,numpy.core.records.fromrecords
+Return the numeric string left-filled with zeros,numpy.char.zfill
+Return an ndarray of the provided type that satisfies requirements.,numpy.require
+Scalar method identical to the corresponding array attribute.,numpy.generic.squeeze
+Helper for pickle.,numpy.dtype.__reduce__
+"Return the complex conjugate, element-wise.",numpy.ndarray.conjugate
+Compute the ‘inverse’ of an N-dimensional array.,numpy.linalg.tensorinv
+Extract a diagonal or construct a diagonal array.,numpy.diag
+Test whether input is an instance of MaskedArray.,numpy.ma.isarray
+"Return an array whose values are limited to ,.
+One of max or min must be given.",numpy.ndarray.clip
+"Convert the input to an array, checking for NaNs or Infs.",numpy.asarray_chkfinite
+sc.__array__(dtype) return 0-dim array from scalar with specified dtype,numpy.generic.__array__
+Create a record array from a (flat) list of arrays,numpy.core.records.fromarrays
+Return a new dtype with a different byte order.,numpy.dtype.newbyteorder
+Return the sum along diagonals of the array.,numpy.ndarray.trace
+"For each element in ,, return a copy of the string where all
+characters occurring in the optional argument , are
+removed, and the remaining characters have been mapped through the
+given translation table.",numpy.char.translate
+Test whether input is an instance of MaskedArray.,numpy.ma.isMA
+sc.__array_wrap__(obj) return scalar from array,numpy.generic.__array_wrap__
+"Return True if m is a valid, standard mask.",numpy.ma.is_mask
+Return an array converted to a float type.,numpy.asfarray
+"Either , or a readonly dictionary of metadata (mappingproxy).",numpy.dtype.metadata
+"Return the product of array elements over a given axis treating Not a
+Numbers (NaNs) as ones.",numpy.nanprod
+Test whether input is an instance of MaskedArray.,numpy.ma.isMaskedArray
+Return the minimum along a given axis.,numpy.ndarray.min
+Returns the average of the array elements along given axis.,numpy.ndarray.mean
+Peak to peak (maximum - minimum) value along a given axis.,numpy.ndarray.ptp
+"Return element-wise a copy of the string with
+uppercase characters converted to lowercase and vice versa.",numpy.char.swapcase
+Array protocol: struct,numpy.generic.__array_struct__
+Determine whether input has masked values.,numpy.ma.is_masked
+,numpy.lib.format
+"Solve the tensor equation , for x.",numpy.linalg.tensorsolve
+"A generic data source file (file, http, ftp, …).",numpy.DataSource
+Return the number of elements along a given axis.,numpy.ma.size
+Return the maximum along a given axis.,numpy.ndarray.max
+Array protocol: Python side,numpy.generic.__array_interface__
+Create a new 1-dimensional array from an iterable object.,numpy.fromiter
+"For each element in ,, return a list of the lines in the
+element, breaking at line boundaries.",numpy.char.splitlines
+ description of the data-type.,numpy.dtype.descr
+"For each element in ,, return a copy with the leading and
+trailing characters removed.",numpy.char.strip
+Return the indices for the upper-triangle of arr.,numpy.triu_indices_from
+"Boolean indicating whether the byte order of this dtype is native
+to the platform.",numpy.dtype.isnative
+Scalar attribute identical to the corresponding array attribute.,numpy.generic.T
+"For each element in ,, return a copy with the trailing
+characters removed.",numpy.char.rstrip
+Return indices of the minimum values along the given axis.,numpy.ndarray.argmin
+Return the shape of an array.,numpy.ma.shape
+"For each element in ,, return a list of the words in the
+string, using , as the delimiter string.",numpy.char.split
+Return indices of the maximum values along the given axis.,numpy.ndarray.argmax
+Standard container-class for easy multiple-inheritance.,numpy.lib.user_array.container
+Rotate an array by 90 degrees in the plane specified by axes.,numpy.rot90
+Return a string representation of a number in the given base system.,numpy.base_repr
+Bit-flags describing how this data type is to be interpreted.,numpy.dtype.flags
+The imaginary part of the scalar.,numpy.generic.imag
+Return selected slices of this array along given axis.,numpy.ndarray.compress
+Return the indices for the lower-triangle of arr.,numpy.tril_indices_from
+Returns True if input arrays are shape consistent and all elements equal.,numpy.array_equiv
+Round to nearest integer towards zero.,numpy.fix
+"For each element in ,, return a list of the words in the
+string, using , as the delimiter string.",numpy.char.rsplit
+Return the indices of the bins to which each value in input array belongs.,numpy.digitize
+The real part of the scalar.,numpy.generic.real
+"Return the indices for the lower-triangle of an (n, m) array.",numpy.tril_indices
+"Boolean indicating whether this dtype contains any reference-counted
+objects in any fields or sub-dtypes.",numpy.dtype.hasobject
+Set a Python function to be used when pretty printing arrays.,numpy.set_string_function
+"True if two arrays have the same shape and elements, False otherwise.",numpy.array_equal
+Partition (split) each element around the right-most separator.,numpy.char.rpartition
+Evenly round to the given number of decimals.,numpy.around
+Compute the condition number of a matrix.,numpy.linalg.cond
+Get array data-descriptor.,numpy.generic.dtype
+"Return the indices to access (n, n) arrays, given a masking function.",numpy.mask_indices
+"Shape tuple of the sub-array if this data type describes a sub-array,
+and , otherwise.",numpy.dtype.shape
+Return the current print options.,numpy.get_printoptions
+"Returns a boolean array where two arrays are element-wise equal within a
+tolerance.",numpy.isclose
+"Return specified diagonals. In NumPy 1.9 the returned array is a
+read-only view instead of a copy as in previous NumPy versions.  In
+a future version the read-only restriction will be removed.",numpy.ndarray.diagonal
+"Return the character for the minimum-size type to which given types can
+be safely cast.",numpy.mintypecode
+Returns the indices that would partition this array.,numpy.ndarray.argpartition
+Scalar attribute identical to the corresponding array attribute.,numpy.generic.base
+Return the indices to access the main diagonal of an n-dimensional array.,numpy.diag_indices_from
+Returns True if two arrays are element-wise equal within a tolerance.,numpy.allclose
+"Tuple , if this , describes a sub-array, and
+None otherwise.",numpy.dtype.subdtype
+Count the number of masked elements along the given axis.,numpy.ma.count_masked
+Return a contiguous array (ndim >= 1) in memory (C order).,numpy.ascontiguousarray
+Provides a convenient view on arrays of string and unicode values.,numpy.chararray
+Set printing options.,numpy.set_printoptions
+"For each element in ,, return a copy of the string with all
+occurrences of substring , replaced by ,.",numpy.char.replace
+Shift the zero-frequency component to the center of the spectrum.,numpy.fft.fftshift
+"Rearranges the elements in the array in such a way that the value of the
+element in kth position is in the position it would be in a sorted array.
+All elements smaller than the kth element are moved before this element and
+all equal or greater are moved behind it. The ordering of the elements in
+the two partitions is undefined.",numpy.ndarray.partition
+Return the string representation of a scalar dtype.,numpy.sctype2char
+"Ordered list of field names, or , if there are no fields.",numpy.dtype.names
+Write any changes in the array to the file on disk.,numpy.memmap.flush
+Return the indices to access the main diagonal of an array.,numpy.diag_indices
+Count the non-masked elements of the array along the given axis.,numpy.ma.count
+Return a description for the given data type code.,numpy.typename
+"Convert the input to an ndarray, but pass ndarray subclasses through.",numpy.asanyarray
+"Partition each element in , around ,.",numpy.char.partition
+"Return the Discrete Fourier Transform sample frequencies
+(for usage with rfft, irfft).",numpy.fft.rfftfreq
+"Counts the number of non-zero values in the array ,.",numpy.count_nonzero
+A character indicating the byte-order of this data-type object.,numpy.dtype.byteorder
+Compute the bi-dimensional histogram of two data samples.,numpy.histogram2d
+Return the elements of an array that satisfy some condition.,numpy.extract
+The element size of this data-type object.,numpy.dtype.itemsize
+Number of array dimensions.,numpy.ndarray.ndim
+Return an array of zeros with the same shape and type as a given array.,numpy.ma.zeros_like
+Determine if a class is a subclass of a second class.,numpy.issubclass_
+Returns the indices that would sort this array.,numpy.ndarray.argsort
+Compute the inverse FFT of a signal that has Hermitian symmetry.,numpy.fft.ihfft
+Returns True if all elements evaluate to True.,numpy.ma.all
+"Converts a tuple of index arrays into an array of flat
+indices, applying boundary modes to the multi-index.",numpy.ravel_multi_index
+The number of array dimensions.,numpy.generic.ndim
+Return the indices of the elements that are non-zero.,numpy.ndarray.nonzero
+A bit-width name for this data-type.,numpy.dtype.name
+"Returns True if the type of , is a scalar type.",numpy.isscalar
+Display a message on a device.,numpy.disp
+"Return an array with the elements of , left-justified in a
+string of length ,.",numpy.char.ljust
+Use an index array to construct a new array from a set of choices.,numpy.ndarray.choose
+View of the transposed array.,numpy.ndarray.T
+"Compute the FFT of a signal that has Hermitian symmetry, i.e., a real
+spectrum.",numpy.fft.hfft
+Determine if the first argument is a subclass of the second argument.,numpy.issubsctype
+Tuple of bytes steps in each dimension.,numpy.generic.strides
+"Computes the inverse of ,.",numpy.fft.irfftn
+"Return a new array of given shape and type, filled with zeros.",numpy.ma.zeros
+Return a string representation of the data in an array.,numpy.array_str
+Return an array of ones with the same shape and type as a given array.,numpy.ma.ones_like
+Print the NumPy arrays in the given dictionary.,numpy.who
+Return True if x is a not complex type or an array of complex numbers.,numpy.isrealobj
+Returns True if first argument is a typecode lower/equal in type hierarchy.,numpy.issubdtype
+Check whether or not an object can be iterated over.,numpy.iterable
+The array-protocol typestring of this data-type object.,numpy.dtype.str
+Return the string representation of an array.,numpy.array_repr
+Return a string representation of an array.,numpy.array2string
+Compute the qr factorization of a matrix.,numpy.linalg.qr
+Repeat elements of an array.,numpy.ndarray.repeat
+The integer value of flags.,numpy.generic.flags
+Tuple of array dimensions.,numpy.generic.shape
+"Return a new array of given shape and type, filled with ones.",numpy.ma.ones
+"Returns a bool array, where True if input element is real.",numpy.isreal
+"Return an array formed from the elements of , at the given indices.",numpy.ndarray.take
+Deprecates a function and includes the deprecation in its docstring.,numpy.deprecate_with_doc
+Construct a record array from a wide-variety of objects.,numpy.core.records.array
+"Compute the standard deviation along the specified axis, while
+ignoring NaNs.",numpy.nanstd
+Empty masked array with the properties of an existing array.,numpy.ma.masked_all_like
+Kronecker product of two arrays.,numpy.kron
+"Returns the (multiplicative) inverse of invertible ,.",numpy.matrix.I
+"Roll the specified axis backwards, until it lies in a given position.",numpy.rollaxis
+"Computes the inverse of ,.",numpy.fft.irfft2
+"Calls , element-wise.",numpy.char.encode
+A unique character code for each of the 21 different built-in types.,numpy.dtype.char
+"operands[,]",numpy.nditer.operands
+Unwrap by taking the complement of large deltas with respect to the period.,numpy.unwrap
+Machine limits for floating point types.,numpy.finfo
+"Check if the array is Fortran contiguous but , C contiguous.",numpy.isfortran
+"Compute the inverse hyperbolic tangent of ,.",numpy.emath.arctanh
+"Issues a DeprecationWarning, adds warning to ,’s
+docstring, rebinds , and returns the new
+function object.",numpy.deprecate
+Machine limits for integer types.,numpy.iinfo
+"Returns the (complex) conjugate transpose of ,.",numpy.matrix.H
+A data-type scalar that allows field access as attribute lookup.,numpy.record
+"Find the indices of array elements that are non-zero, grouped by element.",numpy.argwhere
+"Calls , element-wise.",numpy.char.decode
+Move axes of an array to new positions.,numpy.moveaxis
+Empty masked array with all elements masked.,numpy.ma.masked_all
+"Raise a square matrix to the (integer) power ,.",numpy.linalg.matrix_power
+Returns a view of the array with axes transposed.,numpy.ndarray.transpose
+"Return a copy of , with its elements centered in a string of
+length ,.",numpy.char.center
+Compute the 2-dimensional FFT of a real array.,numpy.fft.rfft2
+Compute the inverse sine of x.,numpy.emath.arcsin
+"Computes the inverse of ,.",numpy.fft.irfft
+"Compute the median along the specified axis, while ignoring NaNs.",numpy.nanmedian
+"Compute the arithmetic mean along the specified axis, ignoring NaNs.",numpy.nanmean
+A character code (one of ‘biufcmMOSUV’) identifying the general kind of data.,numpy.dtype.kind
+A nicer way to build up index tuples for arrays.,numpy.s_
+"Print information about various resources in the system
+including available intrinsic support and BLAS/LAPACK library
+in use",numpy.show_runtime
+Check for a complex type or an array of complex numbers.,numpy.iscomplexobj
+Return a new array with the same shape and type as a given array.,numpy.ma.empty_like
+A new 1-D array initialized from text data in a string.,numpy.fromstring
+"Evaluates the lowest cost contraction order for an einsum expression by
+considering the creation of intermediate arrays.",numpy.einsum_path
+"Return the indices of the minimum values in the specified axis ignoring
+NaNs. For all-NaN slices , is raised. Warning: the results
+cannot be trusted if a slice contains only NaNs and Infs.",numpy.nanargmin
+,numpy.dtype.type
+Produce an object that mimics broadcasting.,numpy.broadcast
+Show libraries in the system on which NumPy was built.,numpy.show_config
+"Returns a bool array, where True if input element is complex.",numpy.iscomplex
+"Return a new array of given shape and type, without initializing entries.",numpy.ma.empty
+Parse and compare numpy version strings.,numpy.lib.NumpyVersion
+Information about the memory layout of the array.,numpy.ndarray.flags
+"Construct an array from a text file, using regular expression parsing.",numpy.fromregex
+"Return a view of the array with , and , interchanged.",numpy.ndarray.swapaxes
+Convert series to a different kind and/or domain and/or window.,numpy.polynomial.polynomial.Polynomial.convert
+"Test element-wise for negative infinity, return result as bool array.",numpy.isneginf
+"Compute the logarithm base 10 of ,.",numpy.emath.log10
+"Test element-wise for positive infinity, return result as bool array.",numpy.isposinf
+Least squares fit to data.,numpy.polynomial.polynomial.Polynomial.fit
+"Remove axes of length one from ,.",numpy.ndarray.squeeze
+"Return a masked array with elements from , or ,, depending on condition.",numpy.ma.where
+"Return (a * i), that is string multiple concatenation,
+element-wise.",numpy.char.multiply
+Find the union of two arrays.,numpy.union1d
+Construct an array by executing a function over each coordinate.,numpy.ma.fromfunction
+Returns an array containing the same data with a new shape.,numpy.ndarray.reshape
+Interpret a buffer as a 1-dimensional array.,numpy.ma.frombuffer
+Returns pointers to the end-points of an array.,numpy.byte_bounds
+Set the floating-point error callback function or log object.,numpy.seterrcall
+"Calculates ,, broadcasting over , only.
+Returns a boolean array of the same shape as , that is True
+where an element of , is in , and False otherwise.",numpy.isin
+Get the current way of handling floating-point errors.,numpy.geterr
+"Compute the logarithm base 2 of ,.",numpy.emath.log2
+Axis supplied was invalid.,numpy.AxisError
+"Return the array as an ,-levels deep nested list of Python scalars.",numpy.ndarray.tolist
+Find the set difference of two arrays.,numpy.setdiff1d
+Notes,numpy.ma.copy
+Determine if two arrays might share memory,numpy.may_share_memory
+"Sort an array in-place. Refer to , for full documentation.",numpy.ndarray.sort
+"Compute the natural logarithm of ,.",numpy.emath.log
+"Get help information for a function, class, or module.",numpy.info
+Return a copy of the array.,numpy.ndarray.copy
+"Sort a complex array using the real part first, then the imaginary part.",numpy.sort_complex
+Determine if two arrays share memory.,numpy.shares_memory
+"Compute the dot product of two or more arrays in a single function call,
+while automatically selecting the fastest evaluation order.",numpy.linalg.multi_dot
+Return the size of the buffer used in ufuncs.,numpy.getbufsize
+Length of one array element in bytes.,numpy.ndarray.itemsize
+The real part of the array.,numpy.ndarray.real
+The imaginary part of the array.,numpy.ndarray.imag
+"Insert scalar into an array (scalar is cast to array’s dtype, if possible)",numpy.ndarray.itemset
+"Set array flags WRITEABLE, ALIGNED, WRITEBACKIFCOPY,
+respectively.",numpy.ndarray.setflags
+Data-type of the array’s elements.,numpy.ndarray.dtype
+Total bytes consumed by the elements of the array.,numpy.ndarray.nbytes
+Number of elements in the array.,numpy.ndarray.size
+"A compatibility alias for ,, with exactly the same behavior.",numpy.ndarray.tostring
+"Returns the pickle of the array as a string.
+pickle.loads will convert the string back to an array.",numpy.ndarray.dumps
+"Set , for all , in indices.",numpy.ndarray.put
+Return a flattened array.,numpy.ndarray.ravel
+Complex-conjugate all elements.,numpy.ndarray.conj
+Return self!=value.,numpy.ndarray.__ne__
+True if self else False,numpy.ndarray.__bool__
+Return self<value.,numpy.ndarray.__lt__
+Return self>=value.,numpy.ndarray.__ge__
+Return self>value.,numpy.ndarray.__gt__
+Return self<=value.,numpy.ndarray.__le__
+"Returns the variance of the array elements, along given axis.",numpy.ndarray.var
+Return self==value.,numpy.ndarray.__eq__
+,numpy.ndarray.__abs__
+-self,numpy.ndarray.__neg__
++self,numpy.ndarray.__pos__
+~self,numpy.ndarray.__invert__
+Return self<<=value.,numpy.ndarray.__ilshift__
+Return repr(self).,numpy.ndarray.__repr__
+Return self+value.,numpy.ndarray.__add__
+Return self>>=value.,numpy.ndarray.__irshift__
+Return str(self).,numpy.ndarray.__str__
+,numpy.ndarray.__complex__
+,numpy.ndarray.__float__
+,numpy.ndarray.__new__
+For unpickling.,numpy.ndarray.__setstate__
+For pickling.,numpy.ndarray.__reduce__
+"Used if , is called on an array.",numpy.ndarray.__deepcopy__
+Return self[key].,numpy.ndarray.__getitem__
+Set self[key] to value.,numpy.ndarray.__setitem__
+Return len(self).,numpy.ndarray.__len__
+"Returns a view of , with the same type as self.",numpy.ndarray.__array_wrap__
+,numpy.ndarray.__int__
+"Returns either a new reference to self if dtype is not given or a new array
+of provided data type if dtype is different from the current dtype of the
+array.",numpy.ndarray.__array__
+"Return ,.",numpy.ndarray.__matmul__
+"Used if , is called on an array. Returns a copy of the array.",numpy.ndarray.__copy__
+Return self|=value.,numpy.ndarray.__ior__
+Return self%=value.,numpy.ndarray.__imod__
+Return self&=value.,numpy.ndarray.__iand__
+Return self^=value.,numpy.ndarray.__ixor__
+Return self**=value.,numpy.ndarray.__ipow__
+Return self/=value.,numpy.ndarray.__itruediv__
+Return self*=value.,numpy.ndarray.__imul__
+Return self//=value.,numpy.ndarray.__ifloordiv__
+Return self+=value.,numpy.ndarray.__iadd__
+Return self|value.,numpy.ndarray.__or__
+Return self-=value.,numpy.ndarray.__isub__
+Return self^value.,numpy.ndarray.__xor__
+Return self>>value.,numpy.ndarray.__rshift__
+Return self<<value.,numpy.ndarray.__lshift__
+"Return pow(self, value, mod).",numpy.ndarray.__pow__
+Return self&value.,numpy.ndarray.__and__
+"Return divmod(self, value).",numpy.ndarray.__divmod__
+Return self*value.,numpy.ndarray.__mul__
+Return self%value.,numpy.ndarray.__mod__
+Return self/value.,numpy.ndarray.__truediv__
+Return self//value.,numpy.ndarray.__floordiv__
+Return self-value.,numpy.ndarray.__sub__

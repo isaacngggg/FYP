@@ -1,0 +1,853 @@
+description,spider,title,url
+,,Examples,https://matplotlib.org/stable/gallery/
+"Top level ,, which holds all plot elements.
+Many methods are implemented in ,.,A logical figure inside a figure, usually added to a figure (or parent
+,) with , or , methods
+(provisional API v3.4).,Control the default spacing between subplots.,The top level container for all the plot elements.,Base class for , and , containing the methods that add
+artists to the figure or subfigure, create Axes, etc.,Logical figure that can be placed inside a figure.,A class to hold the parameters for a subplot.,Calculate the width and height for a figure with a specified aspect ratio.",,,https://matplotlib.org/stable/api/figure_api.html
+Plot contour lines.,,matplotlib.axes.Axes.contour,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.contour.html
+,,,https://matplotlib.org/stable/api/matplotlib_configuration_api.html
+A base class for Animations.,,matplotlib.animation.Animation,https://matplotlib.org/stable/api/_as_gen/matplotlib.animation.Animation.html
+"Create a new figure, or activate an existing figure.",,matplotlib.pyplot.figure,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html
+Create a figure and a set of subplots.,,matplotlib.pyplot.subplots,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots.html
+" subclass that makes an animation by repeatedly calling
+a function ,.",,matplotlib.animation.FuncAnimation,https://matplotlib.org/stable/api/_as_gen/matplotlib.animation.FuncAnimation.html
+,,Setting up Matplotlib for development,https://matplotlib.org/stable/devel/development_setup.html
+Build a layout of Axes based on ASCII art or nested lists.,,matplotlib.pyplot.subplot_mosaic,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot_mosaic.html
+" subclass that creates an animation by using a fixed
+set of , objects.",,matplotlib.animation.ArtistAnimation,https://matplotlib.org/stable/api/_as_gen/matplotlib.animation.ArtistAnimation.html
+Remove the artist from the figure if possible.,,matplotlib.artist.Artist.remove,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.remove.html
+"Return the clip path with the non-affine part of its
+transformation applied, and the remaining affine part of its
+transformation.",,matplotlib.artist.Artist.get_transformed_clip_path_and_affine,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_transformed_clip_path_and_affine.html
+"Return the value of an ,'s ,, or print all of them.",,matplotlib.artist.getp,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.getp.html
+"Set one or more properties on an ,, or list allowed values.",,matplotlib.artist.setp,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.setp.html
+Display minor ticks on the Axes.,,matplotlib.axes.Axes.minorticks_on,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.minorticks_on.html
+Remove minor ticks from the Axes.,,matplotlib.axes.Axes.minorticks_off,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.minorticks_off.html
+"Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,, ,Bases: ,, ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Create a new ""blended"" transform using , to transform
+the ,-axis and , to transform the ,-axis.,Create a new composite transform that is the result of applying
+transform a then transform b.,Check, inclusively, whether an interval includes a given value.,Check, excluding endpoints, whether an interval includes a given value.,Modify the endpoints of a range as needed to avoid singularities.,Return a new transform with an added offset.",,,https://matplotlib.org/stable/api/transformations.html
+Get the formatter of the major ticker.,,matplotlib.axis.Axis.get_major_formatter,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_major_formatter.html
+Get the locator of the major ticker.,,matplotlib.axis.Axis.get_major_locator,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_major_locator.html
+Adjust the padding between and around subplots.,,matplotlib.pyplot.tight_layout,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.tight_layout.html
+"Bases: ,Bases: ,Bases: ,Bases: ,Return a list of dictionaries of statistics used to draw a series of box
+and whisker plots using ,.,Return a list of (ind0, ind1) such that , is
+True and we cover all such regions.,Find all masked and/or non-finite points in a set of arguments,
+and return the arguments with only the unmasked points remaining.,Return whether the given writable file-like object requires Unicode to be
+written to it.,Return a generator of flattened nested containers.,Return a sample data file. , is a path relative to the
+, directory. If , is ,
+return a file object, otherwise just a file path.,A helper function to create reasonable x values for the given ,.,Return whether the string , contains math expressions.,Return whether the given object is a scalar or string like.,Return whether , looks like a file object with a , method.,Maps short codes for line style to their full name used by backends.,Maps full names for line styles used by backends to their short codes.,Bases: ,Helper function to normalize kwarg inputs.,Pass through file objects and context-manage path-likes.,Print loops of cyclic references in the given ,.,Convert continuous line to mid-steps.,Convert continuous line to post-steps.,Convert continuous line to pre-steps.,[,] Return the memory consumed by the process.,Return the first element in ,.,Convert dictview objects to list. Other inputs are returned unchanged.,Bases: ,Resample an array with , points between original point pairs.,Remove latex formatting from mathtext.,Convert a path to an open file handle or pass-through a file-like object.,Return a list of dictionaries of data which can be used to draw a series
+of violin plots.",,,https://matplotlib.org/stable/api/cbook_api.html
+"Return this Axis' major tick labels, as a list of ,.",,matplotlib.axis.Axis.get_majorticklabels,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_majorticklabels.html
+Get the formatter of the minor ticker.,,matplotlib.axis.Axis.get_minor_formatter,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_minor_formatter.html
+"Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ",,,https://matplotlib.org/stable/api/ticker_api.html
+Draw an unstructured triangular grid as lines and/or markers.,,matplotlib.pyplot.triplot,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.triplot.html
+"Return the list of major ,s.",,matplotlib.axis.Axis.get_major_ticks,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_major_ticks.html
+"An abstract base class to handle drawing/rendering operations.,The abstraction layer that separates the , from the backend
+specific details like a user interface drawing area.,An abstract base class that provides color, line styles, etc.,The base class for all of the Matplotlib event handling. Derived classes
+such as , and , store the meta data like keys and
+buttons pressed, x and y locations in pixel and , coordinates.,The base class for the , class of each interactive backend; the
+'show' callable is then set to ,.,The base class for the Toolbar class of each interactive backend.,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,The default Matplotlib button actions for extra mouse buttons.,Return the registered default canvas for given file format.
+Handles deferred import of required backend.,Implement the default Matplotlib key bindings for the canvas and toolbar
+described at ,.,Register a backend for saving to a given file format.",,,https://matplotlib.org/stable/api/backend_bases_api.html
+Bases: ,,matplotlib.patches.FancyArrowPatch,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.FancyArrowPatch.html
+Colormap and save an array as an image file.,,matplotlib.pyplot.imsave,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.imsave.html
+"Return this Axis' minor tick lines as a list of ,s.",,matplotlib.axis.Axis.get_minorticklines,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_minorticklines.html
+Return this Axis' minor tick locations in data coordinates.,,matplotlib.axis.Axis.get_minorticklocs,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_minorticklocs.html
+Add a colorbar to a plot.,,matplotlib.pyplot.colorbar,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.colorbar.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=axes.autolimit_mode
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=legend.fontsize
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=figure.subplot.hspace
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=figure.subplot.wspace
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=text.usetex
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=lines.color
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=lines.linewidth
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=mathtext.fontset
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=lines.antialiased
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=yaxis.labellocation
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=font.size
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=savefig.format
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=legend.borderpad
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=xaxis.labellocation
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=font.stretch
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=font.weight
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=font.variant
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=image.cmap
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=figure.constrained_layout.wspace
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=font.style
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=figure.constrained_layout.w_pad
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=figure.constrained_layout.hspace
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=font.family
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=text.color
+,,,https://matplotlib.org/stable/api/pyplot_summary.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=scatter.marker
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=figure.constrained_layout.h_pad
+Bases: ,,matplotlib.quiver.Barbs,https://matplotlib.org/stable/api/_as_gen/matplotlib.quiver.Barbs.html
+Create a new figure manager instance.,,matplotlib.pyplot.new_figure_manager,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.new_figure_manager.html
+Bases: ,,matplotlib.quiver.QuiverKey,https://matplotlib.org/stable/api/_as_gen/matplotlib.quiver.QuiverKey.html
+"Disconnect the callback with id ,.",,matplotlib.pyplot.disconnect,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.disconnect.html
+Bases: ,,matplotlib.quiver.Quiver,https://matplotlib.org/stable/api/_as_gen/matplotlib.quiver.Quiver.html
+Return the figure manager of the current figure.,,matplotlib.pyplot.get_current_fig_manager,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.get_current_fig_manager.html
+"Bind function , to event ,.",,matplotlib.pyplot.connect,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.connect.html
+Blocking call to interact with the figure.,,matplotlib.pyplot.waitforbuttonpress,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.waitforbuttonpress.html
+Blocking call to interact with a figure.,,matplotlib.pyplot.ginput,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.ginput.html
+Get or set the current tick locations and labels of the y-axis.,,matplotlib.pyplot.yticks,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.yticks.html
+Set the yaxis' scale.,,matplotlib.pyplot.yscale,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.yscale.html
+Set the label for the x-axis.,,matplotlib.pyplot.xlabel,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xlabel.html
+Get or set the x limits of the current axes.,,matplotlib.pyplot.xlim,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xlim.html
+Set the label for the y-axis.,,matplotlib.pyplot.ylabel,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.ylabel.html
+Set the xaxis' scale.,,matplotlib.pyplot.xscale,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xscale.html
+"Plot vertical lines at each , from , to ,.",,matplotlib.pyplot.vlines,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.vlines.html
+"Turn on , sketch-style drawing mode. This will
+only have effect on things drawn after this function is called.",,matplotlib.pyplot.xkcd,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xkcd.html
+Get or set the y-limits of the current axes.,,matplotlib.pyplot.ylim,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.ylim.html
+Get or set the current tick locations and labels of the x-axis.,,matplotlib.pyplot.xticks,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xticks.html
+Make a violin plot.,,matplotlib.pyplot.violinplot,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.violinplot.html
+Disconnect from the display hook of the current shell.,,matplotlib.pyplot.uninstall_repl_displayhook,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.uninstall_repl_displayhook.html
+"Make and return a second axes that shares the ,-axis. The new axes will
+overlay , (or the current axes if , is ,), and its ticks will be
+on the right.",,matplotlib.pyplot.twinx,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.twinx.html
+"Make and return a second axes that shares the ,-axis. The new axes will
+overlay , (or the current axes if , is ,), and its ticks will be
+on the top.",,matplotlib.pyplot.twiny,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.twiny.html
+Set a title for the Axes.,,matplotlib.pyplot.title,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.title.html
+"Configure the , used by default for linear Axes.",,matplotlib.pyplot.ticklabel_format,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.ticklabel_format.html
+Get or set the theta gridlines on the current polar plot.,,matplotlib.pyplot.thetagrids,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.thetagrids.html
+Create a pseudocolor plot of an unstructured triangular grid.,,matplotlib.pyplot.tripcolor,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.tripcolor.html
+Add text to the Axes.,,matplotlib.pyplot.text,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.text.html
+Add a centered suptitle to the figure.,,matplotlib.pyplot.suptitle,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.suptitle.html
+Close all open figures and set the Matplotlib backend.,,matplotlib.pyplot.switch_backend,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.switch_backend.html
+"Add a table to an ,.",,matplotlib.pyplot.table,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.table.html
+Launch a subplot tool window for a figure.,,matplotlib.pyplot.subplot_tool,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot_tool.html
+Create a subplot at a specific location inside a regular grid.,,matplotlib.pyplot.subplot2grid,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot2grid.html
+Create a stem plot.,,matplotlib.pyplot.stem,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.stem.html
+Add an Axes to the current figure or retrieve an existing Axes.,,matplotlib.pyplot.subplot,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplot.html
+Make a step plot.,,matplotlib.pyplot.step,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.step.html
+Draw a stacked area plot.,,matplotlib.pyplot.stackplot,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.stackplot.html
+Draw streamlines of a vector flow.,,matplotlib.pyplot.streamplot,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.streamplot.html
+"A stepwise constant function as a line with bounding edges
+or a filled plot.",,matplotlib.pyplot.stairs,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.stairs.html
+Plot the sparsity pattern of a 2D array.,,matplotlib.pyplot.spy,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.spy.html
+Plot a spectrogram.,,matplotlib.pyplot.specgram,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.specgram.html
+"Set Matplotlib's root logger and root logger handler level, creating
+the handler if it does not exist yet.",,matplotlib.pyplot.set_loglevel,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.set_loglevel.html
+"Set the default colormap, and applies it to the current image if any.",,matplotlib.pyplot.set_cmap,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.set_cmap.html
+Make a plot with log scaling on the x axis.,,matplotlib.pyplot.semilogx,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.semilogx.html
+Make a plot with log scaling on the y axis.,,matplotlib.pyplot.semilogy,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.semilogy.html
+Set the current image.,,matplotlib.pyplot.sci,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.sci.html
+"Set one or more properties on an ,, or list allowed values.",,matplotlib.pyplot.setp,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.setp.html
+"Set the current Axes to , and the current Figure to the parent of ,.",,matplotlib.pyplot.sca,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.sca.html
+"A scatter plot of , vs. , with varying marker size and/or color.",,matplotlib.pyplot.scatter,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html
+Get or set the radial gridlines on the current polar plot.,,matplotlib.pyplot.rgrids,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.rgrids.html
+Add a key to a quiver plot.,,matplotlib.pyplot.quiverkey,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.quiverkey.html
+"Set the current ,. , is the grouping for the rc, e.g.,
+for , the group is ,, for
+,, the group is ,, and so on. Group may
+also be a list or tuple of group names, e.g., (,, ,).
+, is a dictionary attribute name/value pairs, e.g.,:",,matplotlib.pyplot.rc,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.rc.html
+"Restore the , from Matplotlib's internal default style.",,matplotlib.pyplot.rcdefaults,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.rcdefaults.html
+Make a polar plot.,,matplotlib.pyplot.polar,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.polar.html
+Plot a 2D field of arrows.,,matplotlib.pyplot.quiver,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.quiver.html
+Plot the power spectral density.,,matplotlib.pyplot.psd,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.psd.html
+Plot a pie chart.,,matplotlib.pyplot.pie,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.pie.html
+Plot y versus x as lines and/or markers.,,matplotlib.pyplot.plot,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
+"[,] Plot coercing the axis to treat floats as dates.",,matplotlib.pyplot.plot_date,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot_date.html
+Plot the phase spectrum.,,matplotlib.pyplot.phase_spectrum,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.phase_spectrum.html
+Create a pseudocolor plot with a non-regular rectangular grid.,,matplotlib.pyplot.pcolormesh,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.pcolormesh.html
+Create a pseudocolor plot with a non-regular rectangular grid.,,matplotlib.pyplot.pcolor,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.pcolor.html
+Display minor ticks on the Axes.,,matplotlib.pyplot.minorticks_on,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.minorticks_on.html
+Remove minor ticks from the Axes.,,matplotlib.pyplot.minorticks_off,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.minorticks_off.html
+Display an array as a matrix in a new figure window.,,matplotlib.pyplot.matshow,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.matshow.html
+Plot the magnitude spectrum.,,matplotlib.pyplot.magnitude_spectrum,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.magnitude_spectrum.html
+Set or retrieve autoscaling margins.,,matplotlib.pyplot.margins,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.margins.html
+Make a plot with log scaling on both the x and y axis.,,matplotlib.pyplot.loglog,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.loglog.html
+Enable interactive mode.,,matplotlib.pyplot.ion,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.ion.html
+Control behavior of major tick locators.,,matplotlib.pyplot.locator_params,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.locator_params.html
+Return whether plots are updated after every plotting command.,,matplotlib.pyplot.isinteractive,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.isinteractive.html
+Place a legend on the Axes.,,matplotlib.pyplot.legend,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.legend.html
+Connect to the display hook of the current shell.,,matplotlib.pyplot.install_repl_displayhook,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.install_repl_displayhook.html
+Disable interactive mode.,,matplotlib.pyplot.ioff,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.ioff.html
+"Plot horizontal lines at each , from , to ,.",,matplotlib.pyplot.hlines,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hlines.html
+Configure the grid lines.,,matplotlib.pyplot.grid,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.grid.html
+Make a 2D histogram plot.,,matplotlib.pyplot.hist2d,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist2d.html
+Compute and plot a histogram.,,matplotlib.pyplot.hist,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html
+"Make a 2D hexagonal binning plot of points ,, ,.",,matplotlib.pyplot.hexbin,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hexbin.html
+Return a list of existing figure labels.,,matplotlib.pyplot.get_figlabels,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.get_figlabels.html
+"Return the value of an ,'s ,, or print all of them.",,matplotlib.pyplot.getp,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.getp.html
+Return a list of existing figure numbers.,,matplotlib.pyplot.get_fignums,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.get_fignums.html
+"Get a colormap instance, defaulting to rc values if , is None.",,matplotlib.pyplot.get_cmap,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.get_cmap.html
+"Return the value of an ,'s ,, or print all of them.",,matplotlib.pyplot.get,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.get.html
+Get the current colorable artist.,,matplotlib.pyplot.gci,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.gci.html
+Get the current Axes.,,matplotlib.pyplot.gca,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.gca.html
+Find artist objects.,,matplotlib.pyplot.findobj,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.findobj.html
+Fill the area between two vertical curves.,,matplotlib.pyplot.fill_betweenx,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.fill_betweenx.html
+Fill the area between two horizontal curves.,,matplotlib.pyplot.fill_between,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.fill_between.html
+Get the current figure.,,matplotlib.pyplot.gcf,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.gcf.html
+Plot filled polygons.,,matplotlib.pyplot.fill,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.fill.html
+Add text to figure.,,matplotlib.pyplot.figtext,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figtext.html
+Place a legend on the figure.,,matplotlib.pyplot.figlegend,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figlegend.html
+Add a non-resampled image to the figure.,,matplotlib.pyplot.figimage,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figimage.html
+Return whether the figure with the given id exists.,,matplotlib.pyplot.fignum_exists,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.fignum_exists.html
+Plot identical parallel lines at the given positions.,,matplotlib.pyplot.eventplot,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.eventplot.html
+Redraw the current figure if in interactive mode.,,matplotlib.pyplot.draw_if_interactive,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.draw_if_interactive.html
+Redraw the current figure.,,matplotlib.pyplot.draw,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.draw.html
+Plot y versus x as lines and/or markers with attached errorbars.,,matplotlib.pyplot.errorbar,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.errorbar.html
+"Remove an , (defaulting to the current axes) from its figure.",,matplotlib.pyplot.delaxes,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.delaxes.html
+Plot the cross-spectral density.,,matplotlib.pyplot.csd,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.csd.html
+Close a figure window.,,matplotlib.pyplot.close,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.close.html
+Set the color limits of the current image.,,matplotlib.pyplot.clim,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.clim.html
+Clear the current figure.,,matplotlib.pyplot.clf,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.clf.html
+"Plot the coherence between , and ,.",,matplotlib.pyplot.cohere,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.cohere.html
+Clear the current axes.,,matplotlib.pyplot.cla,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.cla.html
+Label a contour plot.,,matplotlib.pyplot.clabel,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.clabel.html
+Plot a horizontal sequence of rectangles.,,matplotlib.pyplot.broken_barh,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.broken_barh.html
+Draw a box and whisker plot.,,matplotlib.pyplot.boxplot,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.boxplot.html
+Turn the axes box on or off on the current axes.,,matplotlib.pyplot.box,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.box.html
+Plot a 2D field of barbs.,,matplotlib.pyplot.barbs,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.barbs.html
+Make a horizontal bar plot.,,matplotlib.pyplot.barh,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.barh.html
+Label a bar plot.,,matplotlib.pyplot.bar_label,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar_label.html
+Make a bar plot.,,matplotlib.pyplot.bar,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.bar.html
+Add a vertical line across the Axes.,,matplotlib.pyplot.axvline,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.axvline.html
+Add a vertical span (rectangle) across the Axes.,,matplotlib.pyplot.axvspan,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.axvspan.html
+Add a horizontal span (rectangle) across the Axes.,,matplotlib.pyplot.axhspan,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.axhspan.html
+Convenience method to get or set some axis properties.,,matplotlib.pyplot.axis,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.axis.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=xtick.top
+Add an infinitely long straight line.,,matplotlib.pyplot.axline,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.axline.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=ytick.right
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=xtick.bottom
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=ytick.left
+Add a horizontal line across the Axes.,,matplotlib.pyplot.axhline,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.axhline.html
+Add an arrow to the Axes.,,matplotlib.pyplot.arrow,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.arrow.html
+Autoscale the axis view to the data (toggle).,,matplotlib.pyplot.autoscale,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.autoscale.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=errorbar.capsize
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=axes.titley
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=axes.titlelocation
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=timezone
+Plot the angle spectrum.,,matplotlib.pyplot.angle_spectrum,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.angle_spectrum.html
+"A debug function to draw a rectangle around the bounding
+box returned by an artist's ,
+to test whether the artist is returning the correct bbox.",,matplotlib.patches.draw_bbox,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.draw_bbox.html
+"A debug function to draw a rectangle around the bounding
+box returned by an artist's ,
+to test whether the artist is returning the correct bbox.",,matplotlib.patches.bbox_artist,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.bbox_artist.html
+Bases: ,,matplotlib.patches.RegularPolygon,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.RegularPolygon.html
+Bases: ,,matplotlib.patches.Shadow,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.Shadow.html
+"Annotate the point , with text ,.",,matplotlib.pyplot.annotate,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.annotate.html
+Bases: ,,matplotlib.patches.Patch,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.Patch.html
+Bases: ,,matplotlib.patches.PathPatch,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.PathPatch.html
+Bases: ,,matplotlib.patches.StepPatch,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.StepPatch.html
+Bases: ,,matplotlib.patches.Ellipse,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.Ellipse.html
+Bases: ,,matplotlib.patches.ConnectionStyle,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.ConnectionStyle.html
+Bases: ,,matplotlib.patches.FancyBboxPatch,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.FancyBboxPatch.html
+Bases: ,,matplotlib.patches.CirclePolygon,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.CirclePolygon.html
+Bases: ,,matplotlib.patches.ConnectionPatch,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.ConnectionPatch.html
+Bases: ,,matplotlib.patches.ArrowStyle,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.ArrowStyle.html
+Bases: ,,matplotlib.patches.BoxStyle,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.BoxStyle.html
+Bases: ,,matplotlib.patches.Arc,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.Arc.html
+Bases: ,,matplotlib.patches.Annulus,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.Annulus.html
+Bases: ,,matplotlib.markers.MarkerStyle,https://matplotlib.org/stable/api/_as_gen/matplotlib.markers.MarkerStyle.html
+"Return the indices of the segments in the polyline with coordinates (,,
+,) that are within a distance , of the point (,, ,).",,matplotlib.lines.segment_hits,https://matplotlib.org/stable/api/_as_gen/matplotlib.lines.segment_hits.html
+Bases: ,,matplotlib.lines.VertexSelector,https://matplotlib.org/stable/api/_as_gen/matplotlib.lines.VertexSelector.html
+Bases: ,,matplotlib.gridspec.GridSpecBase,https://matplotlib.org/stable/api/_as_gen/matplotlib.gridspec.GridSpecBase.html
+Bases: ,,matplotlib.gridspec.SubplotSpec,https://matplotlib.org/stable/api/_as_gen/matplotlib.gridspec.SubplotSpec.html
+Return the global mapping of names to named colors.,,matplotlib.colors.get_named_colors_mapping,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.get_named_colors_mapping.html
+"Decorator for building a , subclass from a ,
+subclass.",,matplotlib.colors.make_norm_from_scale,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.make_norm_from_scale.html
+"Return whether , can be interpreted as an RGB(A) color.",,matplotlib.colors.is_color_like,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.is_color_like.html
+"Convert , to a hex color.",,matplotlib.colors.to_hex,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.to_hex.html
+"Convert , to a (n, 4) array of RGBA colors.",,matplotlib.colors.to_rgba_array,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.to_rgba_array.html
+Bases: ,,matplotlib.colors.ColorSequenceRegistry,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.ColorSequenceRegistry.html
+Convert HSV values to RGB.,,matplotlib.colors.hsv_to_rgb,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.hsv_to_rgb.html
+"A helper routine to generate a cmap and a norm instance which
+behave similar to contourf's levels and colors arguments.",,matplotlib.colors.from_levels_and_colors,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.from_levels_and_colors.html
+Bases: ,,matplotlib.colors.ListedColormap,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.ListedColormap.html
+Bases: ,,matplotlib.colors.TwoSlopeNorm,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.TwoSlopeNorm.html
+Bases: ,,matplotlib.colors.LinearSegmentedColormap,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.LinearSegmentedColormap.html
+Bases: ,,matplotlib.colors.SymLogNorm,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.SymLogNorm.html
+Bases: ,,matplotlib.colors.CenteredNorm,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.CenteredNorm.html
+Bases: ,,matplotlib.colors.FuncNorm,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.FuncNorm.html
+Bases: ,,matplotlib.colors.BoundaryNorm,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.BoundaryNorm.html
+Bases: ,,matplotlib.colors.NoNorm,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.NoNorm.html
+Bases: ,,matplotlib.colors.AsinhNorm,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.AsinhNorm.html
+Bases: ,,matplotlib.colors.Normalize,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.Normalize.html
+Bases: ,,matplotlib.colors.PowerNorm,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.PowerNorm.html
+"Set the location of tick in data coords with scalar ,.",,matplotlib.axis.Tick.update_position,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Tick.update_position.html
+Set the tick label pad in points,,matplotlib.axis.Tick.set_pad,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Tick.set_pad.html
+Set the label2 text.,,matplotlib.axis.Tick.set_label2,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Tick.set_label2.html
+Set the url of label1 and label2.,,matplotlib.axis.Tick.set_url,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Tick.set_url.html
+Set the label1 text.,,matplotlib.axis.Tick.set_label1,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Tick.set_label1.html
+"Return the view limits , of the axis the tick belongs to.",,matplotlib.axis.Tick.get_view_interval,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Tick.get_view_interval.html
+Get the length of the tick outside of the Axes.,,matplotlib.axis.Tick.get_tick_padding,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Tick.get_tick_padding.html
+,,matplotlib.axis.Tick.get_tickdir,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Tick.get_tickdir.html
+Get the value of the tick label pad in points.,,matplotlib.axis.Tick.get_pad,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Tick.get_pad.html
+"[,]",,matplotlib.axis.Tick.get_pad_pixels,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Tick.get_pad_pixels.html
+Return the tick location (data coords) as a scalar.,,matplotlib.axis.Tick.get_loc,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Tick.get_loc.html
+"[,] Set the text values of the tick labels.",,matplotlib.axis.Axis.set_ticklabels,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.set_ticklabels.html
+Set this Axis' tick locations and optionally labels.,,matplotlib.axis.Axis.set_ticks,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.set_ticks.html
+Re-initialize the major and minor Tick lists.,,matplotlib.axis.Axis.reset_ticks,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.reset_ticks.html
+"Set the default limits for the axis data and view interval if they
+have not been not mutated yet.",,matplotlib.axis.Axis.set_default_intervals,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.set_default_intervals.html
+,,matplotlib.axis.Axis.limit_range_for_scale,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.limit_range_for_scale.html
+,,matplotlib.axis.Axis.OFFSETTEXTPAD,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.OFFSETTEXTPAD.html
+Move ticks and ticklabels (if present) to the right of the Axes.,,matplotlib.axis.YAxis.tick_right,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.YAxis.tick_right.html
+"The , instance the artist resides in, or ,.",,matplotlib.axis.Axis.axes,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.axes.html
+Move ticks and ticklabels (if present) to the left of the Axes.,,matplotlib.axis.YAxis.tick_left,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.YAxis.tick_left.html
+,,matplotlib.axis.YAxis.set_offset_position,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.YAxis.set_offset_position.html
+Set the label position (left or right),,matplotlib.axis.YAxis.set_label_position,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.YAxis.set_label_position.html
+Set the ticks position.,,matplotlib.axis.YAxis.set_ticks_position,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.YAxis.set_ticks_position.html
+"Return the ticks position (""left"", ""right"", ""default"", or ""unknown"").",,matplotlib.axis.YAxis.get_ticks_position,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.YAxis.get_ticks_position.html
+Move ticks and ticklabels (if present) to the top of the Axes.,,matplotlib.axis.XAxis.tick_top,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.XAxis.tick_top.html
+Read-only name identifying the axis.,,matplotlib.axis.YAxis.axis_name,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.YAxis.axis_name.html
+"[,]",,matplotlib.axis.YAxis.get_text_widths,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.YAxis.get_text_widths.html
+Move ticks and ticklabels (if present) to the bottom of the Axes.,,matplotlib.axis.XAxis.tick_bottom,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.XAxis.tick_bottom.html
+Set the label position (top or bottom),,matplotlib.axis.XAxis.set_label_position,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.XAxis.set_label_position.html
+"Return the ticks position (""top"", ""bottom"", ""default"", or ""unknown"").",,matplotlib.axis.XAxis.get_ticks_position,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.XAxis.get_ticks_position.html
+Set the ticks position.,,matplotlib.axis.XAxis.set_ticks_position,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.XAxis.set_ticks_position.html
+Return the units for axis.,,matplotlib.axis.Axis.get_units,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_units.html
+"Introspect , for units converter and update the
+, instance if necessary. Return ,
+if , is registered for unit conversion.",,matplotlib.axis.Axis.update_units,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.update_units.html
+Read-only name identifying the axis.,,matplotlib.axis.XAxis.axis_name,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.XAxis.axis_name.html
+"[,] Return how much space should be reserved for text above and below the
+Axes, as a pair of floats.",,matplotlib.axis.XAxis.get_text_heights,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.XAxis.get_text_heights.html
+Set the depth of the axis used by the picker.,,matplotlib.axis.Axis.set_pickradius,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.set_pickradius.html
+,,matplotlib.axis.Axis.convert_units,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.convert_units.html
+Set the units for axis.,,matplotlib.axis.Axis.set_units,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.set_units.html
+Return the depth of the axis used by the picker.,,matplotlib.axis.Axis.get_pickradius,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_pickradius.html
+Test whether the artist contains the mouse event.,,matplotlib.axis.Axis.contains,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.contains.html
+"The acceptance radius for containment tests. See also ,.",,matplotlib.axis.Axis.pickradius,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.pickradius.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=axes.axisbelow
+"Return a bounding box that encloses the axis. It only accounts
+tick labels, axis label, and offsetText.",,matplotlib.axis.Axis.get_tightbbox,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_tightbbox.html
+"[,] Get the extents of the tick labels on either side of the axes.",,matplotlib.axis.Axis.get_ticklabel_extents,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_ticklabel_extents.html
+Add an Axes to the current figure and make it the current Axes.,,matplotlib.pyplot.axes,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.axes.html
+Return the estimated number of ticks that can fit on the axis.,,matplotlib.axis.Axis.get_tick_space,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_tick_space.html
+,,matplotlib.axis.Axis.get_minpos,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_minpos.html
+"Bases: ,Given a sequence of ,s, ,s objects, and offsets, as
+found in a ,, returns the bounding box that encapsulates
+all of them.",,,https://matplotlib.org/stable/api/path_api.html
+"Set whether this Axis is oriented in the ""inverse"" direction.",,matplotlib.axis.Axis.set_inverted,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.set_inverted.html
+,,,https://matplotlib.org/stable/api/testing_api.html
+"Set the axis view limits. This method is for internal use; Matplotlib
+users should typically use e.g. , or ,.",,matplotlib.axis.Axis.set_view_interval,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.set_view_interval.html
+Set the axis data limits. This method is for internal use.,,matplotlib.axis.Axis.set_data_interval,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.set_data_interval.html
+"Return whether this Axis is oriented in the ""inverse"" direction.",,matplotlib.axis.Axis.get_inverted,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_inverted.html
+"Return the , view limits of this axis.",,matplotlib.axis.Axis.get_view_interval,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_view_interval.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=ytick.labelleft
+"Bases: ,Bases: ",,,https://matplotlib.org/stable/api/legend_api.html
+"alias of ,Bases: ,Bases: ",,,https://matplotlib.org/stable/api/backend_agg_api.html
+,,,https://matplotlib.org/stable/api/patches_api.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=ytick.labelright
+"Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ",,,https://matplotlib.org/stable/api/widgets_api.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=xtick.labelbottom
+"Return the , data limits of this axis.",,matplotlib.axis.Axis.get_data_interval,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_data_interval.html
+Set up axis ticks and labels to treat data along this Axis as dates.,,matplotlib.axis.Axis.axis_date,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.axis_date.html
+Bases: ,,matplotlib.lines.Line2D,https://matplotlib.org/stable/api/_as_gen/matplotlib.lines.Line2D.html
+Configure the grid lines.,,matplotlib.axis.Axis.grid,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.grid.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=xtick.labeltop
+Draw contour regions on an unstructured triangular grid.,,matplotlib.pyplot.tricontourf,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.tricontourf.html
+"Return this Axis' grid lines as a list of ,s.",,matplotlib.axis.Axis.get_gridlines,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_gridlines.html
+Draw contour lines on an unstructured triangular grid.,,matplotlib.pyplot.tricontour,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.tricontour.html
+Plot contour lines.,,matplotlib.pyplot.contour,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.contour.html
+Return this Axis' tick locations in data coordinates.,,matplotlib.axis.Axis.get_ticklocs,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_ticklocs.html
+"Convert , to an RGBA color.",,matplotlib.colors.to_rgba,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.to_rgba.html
+"Set appearance parameters for ticks, ticklabels, and gridlines.",,matplotlib.axis.Axis.set_tick_params,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.set_tick_params.html
+"Run the GUI event loop for , seconds.",,matplotlib.pyplot.pause,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.pause.html
+Bases: ,,matplotlib.patches.Polygon,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.Polygon.html
+Get this Axis' tick labels.,,matplotlib.axis.Axis.get_ticklabels,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_ticklabels.html
+,,,https://matplotlib.org/stable/api/axis_api.html
+"Return this Axis' tick lines as a list of ,s.",,matplotlib.axis.Axis.get_ticklines,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_ticklines.html
+,,,https://matplotlib.org/stable/api/animation_api.html
+Bases: ,,matplotlib.patches.Arrow,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.Arrow.html
+Bases: ,,matplotlib.patches.Wedge,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.Wedge.html
+Adjust the subplot layout parameters.,,matplotlib.pyplot.subplots_adjust,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots_adjust.html
+Bases: ,,matplotlib.patches.FancyArrow,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.FancyArrow.html
+,,matplotlib.axis.Axis.get_tick_padding,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_tick_padding.html
+Read an image from a file into an array.,,matplotlib.pyplot.imread,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.imread.html
+Bases: ,,matplotlib.colors.Colormap,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.Colormap.html
+Return the axis offsetText as a Text instance.,,matplotlib.axis.Axis.get_offset_text,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_offset_text.html
+Bases: ,,matplotlib.colors.LogNorm,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.LogNorm.html
+Bases: ,,matplotlib.patches.Rectangle,https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.Rectangle.html
+Save the current figure.,,matplotlib.pyplot.savefig,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html
+"Return this Axis' minor tick labels, as a list of ,.",,matplotlib.axis.Axis.get_minorticklabels,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_minorticklabels.html
+,,,https://matplotlib.org/stable/api/colors_api.html
+"Return the list of minor ,s.",,matplotlib.axis.Axis.get_minor_ticks,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_minor_ticks.html
+"Return whether the colors , and , are the same.",,matplotlib.colors.same_color,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.same_color.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=axes.titlepad
+"Bases: ,Bases: ,Bases: ,, ,Bases: ",,,https://matplotlib.org/stable/api/contour_api.html
+Return this Axis' major tick locations in data coordinates.,,matplotlib.axis.Axis.get_majorticklocs,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_majorticklocs.html
+"Bases: ,Compute the angle of the frequency spectrum (wrapped phase spectrum) of ,.
+Data is padded to a length of , and the windowing function , is
+applied to the signal.,The coherence between , and ,. Coherence is the normalized
+cross spectral density:,Compute the complex-valued frequency spectrum of ,.
+Data is padded to a length of , and the windowing function , is
+applied to the signal.,Compute the cross-spectral density.,Return , with its trend removed.,Return , minus best fit line; 'linear' detrending.,Return , minus the mean(,).,Return ,: no detrending.,Compute the magnitude (absolute value) of the frequency spectrum of ,.
+Data is padded to a length of , and the windowing function , is
+applied to the signal.,Compute the phase of the frequency spectrum (unwrapped phase spectrum) of ,.
+Data is padded to a length of , and the windowing function , is
+applied to the signal.,Compute the power spectral density.,Compute a spectrogram.,[,] Get all windows of , with length , as a single array,
+using strides to avoid data duplication.,Return , times the Hanning (or Hann) window of len(,).,No window function; simply return ,.",,,https://matplotlib.org/stable/api/mlab_api.html
+Plot filled contours.,,matplotlib.pyplot.contourf,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.contourf.html
+Get the text of the label.,,matplotlib.axis.Axis.get_label_text,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_label_text.html
+"Change the appearance of ticks, tick labels, and gridlines.",,matplotlib.pyplot.tick_params,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.tick_params.html
+"Return this Axis' major tick lines as a list of ,s.",,matplotlib.axis.Axis.get_majorticklines,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_majorticklines.html
+"Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Convert datetime objects to Matplotlib dates.,Convert a date string to a datenum using ,.,Return a sequence of equally spaced Matplotlib dates.,[,] Convert UNIX time to days since Matplotlib epoch.,Get the epoch used by ,.,Convert Matplotlib dates to , objects.,[,] Convert days since Matplotlib epoch to UNIX time.,Convert number of days to a , object.,Bases: ,Bases: ,Set the epoch (origin for dates) for datetime calculations.",,,https://matplotlib.org/stable/api/dates_api.html
+"Bases: ,Bases: ,Bases: ",,,https://matplotlib.org/stable/api/spines_api.html
+Return the axis label as a Text instance.,,matplotlib.axis.Axis.get_label,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_label.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=image.interpolation
+"An unstructured triangular grid consisting of npoints points and
+ntri triangles. The triangles can either be specified by the user
+or automatically generated using a Delaunay triangulation.,Bases: ,Abstract base class for classes used to find the triangles of a
+Triangulation in which (x, y) points lie.,Bases: ,Abstract base class for classes used to interpolate on a triangular grid.,Bases: ,Bases: ,Abstract base class for classes implementing mesh refinement.,Bases: ,Define basic tools for triangular mesh analysis and improvement.",,,https://matplotlib.org/stable/api/tri_api.html
+Return the label position (top or bottom),,matplotlib.axis.Axis.get_label_position,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_label_position.html
+Bases: ,,matplotlib.colors.LightSource,https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.LightSource.html
+Set the text value of the axis label.,,matplotlib.axis.Axis.set_label_text,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.set_label_text.html
+Set the coordinates of the label.,,matplotlib.axis.Axis.set_label_coords,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.set_label_coords.html
+Set the label position (top or bottom),,matplotlib.axis.Axis.set_label_position,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.set_label_position.html
+"Bases: ,Bases: ,, ,Bases: ",,,https://matplotlib.org/stable/api/text_api.html
+"Plot the cross correlation between , and ,.",,matplotlib.pyplot.xcorr,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xcorr.html
+,,matplotlib.axis.Axis.set_remove_overlapping_locs,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.set_remove_overlapping_locs.html
+Bases: ,,matplotlib.gridspec.GridSpecFromSubplotSpec,https://matplotlib.org/stable/api/_as_gen/matplotlib.gridspec.GridSpecFromSubplotSpec.html
+"Plot the autocorrelation of ,.",,matplotlib.pyplot.acorr,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.acorr.html
+,,matplotlib.axis.Axis.get_remove_overlapping_locs,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_remove_overlapping_locs.html
+If minor ticker locations that overlap with major ticker locations should be trimmed.,,matplotlib.axis.Axis.remove_overlapping_locs,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.remove_overlapping_locs.html
+Set the locator of the minor ticker.,,matplotlib.axis.Axis.set_minor_locator,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.set_minor_locator.html
+"Display data as an image, i.e., on a 2D regular raster.",,matplotlib.pyplot.imshow,https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.imshow.html
+Set the formatter of the minor ticker.,,matplotlib.axis.Axis.set_minor_formatter,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.set_minor_formatter.html
+"Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Composite a number of RGBA images into one. The images are
+composited in the order in which they appear in the , list.,Read an image from a file into an array.,Colormap and save an array as an image file.,Load a , and return it as a numpy int array.,Make a thumbnail of image in , with output filename ,.",,,https://matplotlib.org/stable/api/image_api.html
+Set the locator of the major ticker.,,matplotlib.axis.Axis.set_major_locator,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.set_major_locator.html
+Set the formatter of the major ticker.,,matplotlib.axis.Axis.set_major_formatter,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.set_major_formatter.html
+Get the locator of the minor ticker.,,matplotlib.axis.Axis.get_minor_locator,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_minor_locator.html
+"Bases: ,Bases: ,Bases: ,Bases: ,, ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ,Bases: ",,,https://matplotlib.org/stable/api/collections_api.html
+Return this Axis' scale (as a str).,,matplotlib.axis.Axis.get_scale,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.get_scale.html
+Clear the axis.,,matplotlib.axis.Axis.clear,https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.clear.html
+Set multiple properties at once.,,matplotlib.axes.Axes.set,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set.html
+Return whether any artists have been added to the Axes.,,matplotlib.axes.Axes.has_data,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.has_data.html
+"Return the clip path with the non-affine part of its
+transformation applied, and the remaining affine part of its
+transformation.",,matplotlib.axes.Axes.get_transformed_clip_path_and_affine,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_transformed_clip_path_and_affine.html
+"Return a default list of artists that are used for the bounding box
+calculation.",,matplotlib.axes.Axes.get_default_bbox_extra_artists,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_default_bbox_extra_artists.html
+Notes,,matplotlib.axes.Axes.get_yaxis_text2_transform,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_yaxis_text2_transform.html
+,,matplotlib.axes.Axes.zorder,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.zorder.html
+Notes,,matplotlib.axes.Axes.get_yaxis_text1_transform,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_yaxis_text1_transform.html
+Notes,,matplotlib.axes.Axes.get_xaxis_text2_transform,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_xaxis_text2_transform.html
+Notes,,matplotlib.axes.Axes.get_xaxis_text1_transform,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_xaxis_text1_transform.html
+Return the aspect ratio of the scaled data.,,matplotlib.axes.Axes.get_data_ratio,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_data_ratio.html
+"Get the transformation used for drawing y-axis labels, ticks
+and gridlines. The x-direction is in axis coordinates and the
+y-direction is in data coordinates.",,matplotlib.axes.Axes.get_yaxis_transform,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_yaxis_transform.html
+"Get the transformation used for drawing x-axis labels, ticks
+and gridlines. The x-direction is in data coordinates and the
+y-direction is in axis coordinates.",,matplotlib.axes.Axes.get_xaxis_transform,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_xaxis_transform.html
+,,matplotlib.axes.Axes.name,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.name.html
+"Return the tight bounding box of the Axes, including axis and their
+decorators (xlabel, title, etc).",,matplotlib.axes.Axes.get_tightbbox,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_tightbbox.html
+Set the zorder threshold for rasterization for vector graphics output.,,matplotlib.axes.Axes.set_rasterization_zorder,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_rasterization_zorder.html
+"Return the Axes bounding box in display space; , and ,
+are empty.",,matplotlib.axes.Axes.get_window_extent,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_window_extent.html
+"Efficiently redraw Axes data, but not axis ticks, labels, etc.",,matplotlib.axes.Axes.redraw_in_frame,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.redraw_in_frame.html
+Return the zorder value below which artists will be rasterized.,,matplotlib.axes.Axes.get_rasterization_zorder,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_rasterization_zorder.html
+"[,]",,matplotlib.axes.Axes.get_renderer_cache,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_renderer_cache.html
+Efficiently redraw a single artist.,,matplotlib.axes.Axes.draw_artist,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.draw_artist.html
+Draw the Artist (and its children) using the given renderer.,,matplotlib.axes.Axes.draw,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.draw.html
+Find artist objects.,,matplotlib.axes.Axes.findobj,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.findobj.html
+Return a list of lines contained by the Axes.,,matplotlib.axes.Axes.get_lines,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_lines.html
+"Return a list of ,s contained by the Axes.",,matplotlib.axes.Axes.get_images,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_images.html
+"Return a list of the child ,s of this ,.",,matplotlib.axes.Axes.get_children,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_children.html
+"Return whether , (pair of pixel coordinates) is inside the Axes
+patch.",,matplotlib.axes.Axes.contains_point,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.contains_point.html
+Return the cursor data for a given event.,,matplotlib.axes.Axes.get_cursor_data,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_cursor_data.html
+"Return whether this artist is queried for custom context information
+when the mouse cursor moves over it.",,matplotlib.axes.Axes.mouseover,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.mouseover.html
+Return whether the given event (in display coords) is in the Axes.,,matplotlib.axes.Axes.in_axes,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.in_axes.html
+Test whether the artist contains the mouse event.,,matplotlib.axes.Axes.contains,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.contains.html
+"Return a string representation of ,.",,matplotlib.axes.Axes.format_cursor_data,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.format_cursor_data.html
+"Return , formatted as an y-value.",,matplotlib.axes.Axes.format_ydata,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.format_ydata.html
+"Return , formatted as an x-value.",,matplotlib.axes.Axes.format_xdata,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.format_xdata.html
+Called when a pan operation completes (when the mouse button is up.),,matplotlib.axes.Axes.end_pan,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.end_pan.html
+"Return a format string formatting the ,, , coordinates.",,matplotlib.axes.Axes.format_coord,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.format_coord.html
+Set the navigation toolbar button status.,,matplotlib.axes.Axes.set_navigate_mode,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_navigate_mode.html
+Called when a pan operation has started.,,matplotlib.axes.Axes.start_pan,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.start_pan.html
+Called when the mouse moves during a pan operation.,,matplotlib.axes.Axes.drag_pan,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.drag_pan.html
+"Get the navigation toolbar button status: 'PAN', 'ZOOM', or None.",,matplotlib.axes.Axes.get_navigate_mode,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_navigate_mode.html
+Get whether the Axes responds to navigation commands.,,matplotlib.axes.Axes.get_navigate,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_navigate.html
+Return whether this Axes supports the zoom box button functionality.,,matplotlib.axes.Axes.can_zoom,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.can_zoom.html
+Set whether the Axes responds to navigation toolbar commands.,,matplotlib.axes.Axes.set_navigate,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_navigate.html
+Return whether this Axes supports any pan/zoom button functionality.,,matplotlib.axes.Axes.can_pan,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.can_pan.html
+"Add a callback function that will be called whenever one of the
+,'s properties changes.",,matplotlib.axes.Axes.add_callback,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.add_callback.html
+Remove a callback based on its observer id.,,matplotlib.axes.Axes.remove_callback,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.remove_callback.html
+Set the Axes position.,,matplotlib.axes.Axes.set_position,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_position.html
+"Whether the artist is 'stale' and needs to be re-drawn for the output
+to match the internal state of the artist.",,matplotlib.axes.Axes.stale,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.stale.html
+Call all of the registered callbacks.,,matplotlib.axes.Axes.pchanged,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.pchanged.html
+"Return the position of the Axes within the figure as a ,.",,matplotlib.axes.Axes.get_position,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_position.html
+Reset the active position to the original position.,,matplotlib.axes.Axes.reset_position,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.reset_position.html
+Define the anchor location.,,matplotlib.axes.Axes.set_anchor,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_anchor.html
+Set the Axes locator.,,matplotlib.axes.Axes.set_axes_locator,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_axes_locator.html
+Return an immutable view on the shared x-axes Grouper.,,matplotlib.axes.Axes.get_shared_x_axes,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_shared_x_axes.html
+Return an immutable view on the shared y-axes Grouper.,,matplotlib.axes.Axes.get_shared_y_axes,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_shared_y_axes.html
+Get the anchor location.,,matplotlib.axes.Axes.get_anchor,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_anchor.html
+Return the axes_locator.,,matplotlib.axes.Axes.get_axes_locator,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_axes_locator.html
+"Share the y-axis with ,.",,matplotlib.axes.Axes.sharey,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.sharey.html
+"Share the x-axis with ,.",,matplotlib.axes.Axes.sharex,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.sharex.html
+Create a twin Axes sharing the yaxis.,,matplotlib.axes.Axes.twiny,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.twiny.html
+Create a twin Axes sharing the xaxis.,,matplotlib.axes.Axes.twinx,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.twinx.html
+"Add an , to the Axes; return the image.",,matplotlib.axes.Axes.add_image,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.add_image.html
+"Add a , to the Axes; return the table.",,matplotlib.axes.Axes.add_table,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.add_table.html
+"Add a , to the Axes; return the patch.",,matplotlib.axes.Axes.add_patch,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.add_patch.html
+"Add a , to the Axes; return the line.",,matplotlib.axes.Axes.add_line,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.add_line.html
+"Add a , to the Axes; return the collection.",,matplotlib.axes.Axes.add_collection,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.add_collection.html
+"Add a , to the Axes' containers; return the container.",,matplotlib.axes.Axes.add_container,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.add_container.html
+"Add an , to the Axes' children; return the child Axes.",,matplotlib.axes.Axes.add_child_axes,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.add_child_axes.html
+"Add an , to the Axes; return the artist.",,matplotlib.axes.Axes.add_artist,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.add_artist.html
+"Convert , using the unit type of the yaxis.",,matplotlib.axes.Axes.convert_yunits,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.convert_yunits.html
+Return whether units are set on any axis.,,matplotlib.axes.Axes.have_units,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.have_units.html
+"Convert , using the unit type of the xaxis.",,matplotlib.axes.Axes.convert_xunits,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.convert_xunits.html
+Control behavior of major tick locators.,,matplotlib.axes.Axes.locator_params,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.locator_params.html
+"Change the appearance of ticks, tick labels, and gridlines.",,matplotlib.axes.Axes.tick_params,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.tick_params.html
+Set up axis ticks and labels to treat data along the yaxis as dates.,,matplotlib.axes.Axes.yaxis_date,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.yaxis_date.html
+"Configure the , used by default for linear Axes.",,matplotlib.axes.Axes.ticklabel_format,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.ticklabel_format.html
+"Return the yaxis' grid lines as a list of ,s.",,matplotlib.axes.Axes.get_ygridlines,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_ygridlines.html
+"Return the yaxis' tick lines as a list of ,s.",,matplotlib.axes.Axes.get_yticklines,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_yticklines.html
+Get the yaxis' tick labels.,,matplotlib.axes.Axes.get_yticklabels,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_yticklabels.html
+"Return the yaxis' major tick labels, as a list of ,.",,matplotlib.axes.Axes.get_ymajorticklabels,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_ymajorticklabels.html
+Return the yaxis' tick locations in data coordinates.,,matplotlib.axes.Axes.get_yticks,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_yticks.html
+Set the yaxis' labels with list of string labels.,,matplotlib.axes.Axes.set_yticklabels,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_yticklabels.html
+"Return the xaxis' tick lines as a list of ,s.",,matplotlib.axes.Axes.get_xticklines,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_xticklines.html
+Set the yaxis' tick locations and optionally labels.,,matplotlib.axes.Axes.set_yticks,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_yticks.html
+Set up axis ticks and labels to treat data along the xaxis as dates.,,matplotlib.axes.Axes.xaxis_date,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.xaxis_date.html
+"Return the yaxis' minor tick labels, as a list of ,.",,matplotlib.axes.Axes.get_yminorticklabels,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_yminorticklabels.html
+"Return the xaxis' minor tick labels, as a list of ,.",,matplotlib.axes.Axes.get_xminorticklabels,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_xminorticklabels.html
+Get the xaxis' tick labels.,,matplotlib.axes.Axes.get_xticklabels,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_xticklabels.html
+"Return the xaxis' major tick labels, as a list of ,.",,matplotlib.axes.Axes.get_xmajorticklabels,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_xmajorticklabels.html
+"Return the xaxis' grid lines as a list of ,s.",,matplotlib.axes.Axes.get_xgridlines,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_xgridlines.html
+Set the xaxis' tick locations and optionally labels.,,matplotlib.axes.Axes.set_xticks,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_xticks.html
+Return the xaxis' tick locations in data coordinates.,,matplotlib.axes.Axes.get_xticks,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_xticks.html
+Set the xaxis' labels with list of string labels.,,matplotlib.axes.Axes.set_xticklabels,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_xticklabels.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=axes.prop_cycle
+"Return whether the Axes will adjust its physical dimension ('box') or
+its data limits ('datalim') to achieve the desired aspect ratio.",,matplotlib.axes.Axes.get_adjustable,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_adjustable.html
+"Return the Axes box aspect, i.e. the ratio of height to width.",,matplotlib.axes.Axes.get_box_aspect,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_box_aspect.html
+Set how the Axes adjusts to achieve the required aspect ratio.,,matplotlib.axes.Axes.set_adjustable,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_adjustable.html
+"Set the Axes box aspect, i.e. the ratio of height to width.",,matplotlib.axes.Axes.set_box_aspect,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_box_aspect.html
+Return the aspect ratio of the axes scaling.,,matplotlib.axes.Axes.get_aspect,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_aspect.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=axes.unicode_minus
+"Set the aspect ratio of the axes scaling, i.e. y/x-scale.",,matplotlib.axes.Axes.set_aspect,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_aspect.html
+Adjust the Axes for a specified data aspect ratio.,,matplotlib.axes.Axes.apply_aspect,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.apply_aspect.html
+Return whether the yaxis is autoscaled.,,matplotlib.axes.Axes.get_autoscaley_on,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_autoscaley_on.html
+"Set whether the yaxis is autoscaled when drawing or by
+,.",,matplotlib.axes.Axes.set_autoscaley_on,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_autoscaley_on.html
+Return whether the xaxis is autoscaled.,,matplotlib.axes.Axes.get_autoscalex_on,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_autoscalex_on.html
+"Set whether the xaxis is autoscaled when drawing or by
+,.",,matplotlib.axes.Axes.set_autoscalex_on,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_autoscalex_on.html
+"Return True if each axis is autoscaled, False otherwise.",,matplotlib.axes.Axes.get_autoscale_on,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_autoscale_on.html
+"Set whether autoscaling is applied to each axis on the next draw or
+call to ,.",,matplotlib.axes.Axes.set_autoscale_on,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_autoscale_on.html
+Autoscale the axis view to the data (toggle).,,matplotlib.axes.Axes.autoscale,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.autoscale.html
+Recompute the data limits based on current artists.,,matplotlib.axes.Axes.relim,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.relim.html
+Autoscale the view limits using the data limits.,,matplotlib.axes.Axes.autoscale_view,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.autoscale_view.html
+Set padding of Y data limits prior to autoscaling.,,matplotlib.axes.Axes.set_ymargin,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_ymargin.html
+Set padding of X data limits prior to autoscaling.,,matplotlib.axes.Axes.set_xmargin,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_xmargin.html
+Set or retrieve autoscaling margins.,,matplotlib.axes.Axes.margins,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.margins.html
+"When autoscaling, whether to obey all ,.",,matplotlib.axes.Axes.use_sticky_edges,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.use_sticky_edges.html
+Set the yaxis' scale.,,matplotlib.axes.Axes.set_yscale,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_yscale.html
+Return the yaxis' scale (as a str).,,matplotlib.axes.Axes.get_yscale,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_yscale.html
+Set the xaxis' scale.,,matplotlib.axes.Axes.set_xscale,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_xscale.html
+Return the xaxis' scale (as a str).,,matplotlib.axes.Axes.get_xscale,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_xscale.html
+"Return the , instance, or None if no legend is defined.",,matplotlib.axes.Axes.get_legend,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_legend.html
+Return handles and labels for legend,,matplotlib.axes.Axes.get_legend_handles_labels,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_legend_handles_labels.html
+Get an Axes title.,,matplotlib.axes.Axes.get_title,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_title.html
+Place a legend on the Axes.,,matplotlib.axes.Axes.legend,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.legend.html
+Set a title for the Axes.,,matplotlib.axes.Axes.set_title,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_title.html
+Get the ylabel text string.,,matplotlib.axes.Axes.get_ylabel,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_ylabel.html
+Get the xlabel text string.,,matplotlib.axes.Axes.get_xlabel,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_xlabel.html
+"Return the lower and upper y-axis bounds, in increasing order.",,matplotlib.axes.Axes.get_ybound,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_ybound.html
+"Return the lower and upper x-axis bounds, in increasing order.",,matplotlib.axes.Axes.get_xbound,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_xbound.html
+Set the lower and upper numerical bounds of the x-axis.,,matplotlib.axes.Axes.set_xbound,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_xbound.html
+Set the lower and upper numerical bounds of the y-axis.,,matplotlib.axes.Axes.set_ybound,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_ybound.html
+Set the y-axis view limits.,,matplotlib.axes.Axes.set_ylim,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_ylim.html
+"Extend the , Bbox to include the given points.",,matplotlib.axes.Axes.update_datalim,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.update_datalim.html
+Return the y-axis view limits.,,matplotlib.axes.Axes.get_ylim,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_ylim.html
+Return the x-axis view limits.,,matplotlib.axes.Axes.get_xlim,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_xlim.html
+Invert the y-axis.,,matplotlib.axes.Axes.invert_yaxis,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.invert_yaxis.html
+"Return whether the yaxis is oriented in the ""inverse"" direction.",,matplotlib.axes.Axes.yaxis_inverted,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.yaxis_inverted.html
+Invert the x-axis.,,matplotlib.axes.Axes.invert_xaxis,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.invert_xaxis.html
+"Return whether the xaxis is oriented in the ""inverse"" direction.",,matplotlib.axes.Axes.xaxis_inverted,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.xaxis_inverted.html
+"[,] Return the XAxis instance.",,matplotlib.axes.Axes.get_xaxis,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_xaxis.html
+"[,] Return the YAxis instance.",,matplotlib.axes.Axes.get_yaxis,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_yaxis.html
+Set the property cycle of the Axes.,,matplotlib.axes.Axes.set_prop_cycle,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_prop_cycle.html
+Set the facecolor of the Axes.,,matplotlib.axes.Axes.set_facecolor,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_facecolor.html
+Get the facecolor of the Axes.,,matplotlib.axes.Axes.get_facecolor,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_facecolor.html
+Get whether axis ticks and gridlines are above or below most artists.,,matplotlib.axes.Axes.get_axisbelow,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_axisbelow.html
+Set whether axis ticks and gridlines are above or below most artists.,,matplotlib.axes.Axes.set_axisbelow,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_axisbelow.html
+Set whether the Axes rectangle patch is drawn.,,matplotlib.axes.Axes.set_frame_on,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_frame_on.html
+Get whether the Axes rectangle patch is drawn.,,matplotlib.axes.Axes.get_frame_on,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.get_frame_on.html
+Turn the x- and y-axis on.,,matplotlib.axes.Axes.set_axis_on,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_axis_on.html
+Turn the x- and y-axis off.,,matplotlib.axes.Axes.set_axis_off,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_axis_off.html
+Clear the Axes.,,matplotlib.axes.Axes.cla,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.cla.html
+Clear the Axes.,,matplotlib.axes.Axes.clear,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.clear.html
+Convenience method to get or set some axis properties.,,matplotlib.axes.Axes.axis,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.axis.html
+Draw streamlines of a vector flow.,,matplotlib.axes.Axes.streamplot,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.streamplot.html
+Plot a 2D field of arrows.,,matplotlib.axes.Axes.quiver,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.quiver.html
+Add a key to a quiver plot.,,matplotlib.axes.Axes.quiverkey,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.quiverkey.html
+"Add an inset indicator rectangle to the Axes based on the axis
+limits for an , and draw connectors between ,
+and the rectangle.",,matplotlib.axes.Axes.indicate_inset_zoom,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.indicate_inset_zoom.html
+Plot a 2D field of barbs.,,matplotlib.axes.Axes.barbs,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.barbs.html
+Add a second x-axis to this Axes.,,matplotlib.axes.Axes.secondary_xaxis,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.secondary_xaxis.html
+Add a second y-axis to this Axes.,,matplotlib.axes.Axes.secondary_yaxis,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.secondary_yaxis.html
+"Add an inset indicator to the Axes. This is a rectangle on the plot
+at the position indicated by , that optionally has lines that
+connect the rectangle to an inset Axes (,).",,matplotlib.axes.Axes.indicate_inset,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.indicate_inset.html
+Add a child inset Axes to this existing Axes.,,matplotlib.axes.Axes.inset_axes,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.inset_axes.html
+Add an arrow to the Axes.,,matplotlib.axes.Axes.arrow,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.arrow.html
+"Add a table to an ,.",,matplotlib.axes.Axes.table,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.table.html
+Add text to the Axes.,,matplotlib.axes.Axes.text,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.text.html
+Draw contour regions on an unstructured triangular grid.,,matplotlib.axes.Axes.tricontourf,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.tricontourf.html
+"Annotate the point , with text ,.",,matplotlib.axes.Axes.annotate,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.annotate.html
+Draw contour lines on an unstructured triangular grid.,,matplotlib.axes.Axes.tricontour,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.tricontour.html
+Create a pseudocolor plot with a non-regular rectangular grid.,,matplotlib.axes.Axes.pcolormesh,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.pcolormesh.html
+Create a pseudocolor plot of an unstructured triangular grid.,,matplotlib.axes.Axes.tripcolor,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.tripcolor.html
+Draw an unstructured triangular grid as lines and/or markers.,,matplotlib.axes.Axes.triplot,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.triplot.html
+Plot the sparsity pattern of a 2D array.,,matplotlib.axes.Axes.spy,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.spy.html
+Plot the values of a 2D matrix or array as color-coded image.,,matplotlib.axes.Axes.matshow,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.matshow.html
+Create a pseudocolor plot with a non-regular rectangular grid.,,matplotlib.axes.Axes.pcolor,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.pcolor.html
+Create a pseudocolor plot with a non-regular rectangular grid.,,matplotlib.axes.Axes.pcolorfast,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.pcolorfast.html
+"Display data as an image, i.e., on a 2D regular raster.",,matplotlib.axes.Axes.imshow,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.imshow.html
+Label a contour plot.,,matplotlib.axes.Axes.clabel,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.clabel.html
+Plot filled contours.,,matplotlib.axes.Axes.contourf,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.contourf.html
+"A stepwise constant function as a line with bounding edges
+or a filled plot.",,matplotlib.axes.Axes.stairs,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.stairs.html
+Compute and plot a histogram.,,matplotlib.axes.Axes.hist,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.hist.html
+Drawing function for box and whisker plots.,,matplotlib.axes.Axes.bxp,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.bxp.html
+"Make a 2D hexagonal binning plot of points ,, ,.",,matplotlib.axes.Axes.hexbin,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.hexbin.html
+Make a 2D histogram plot.,,matplotlib.axes.Axes.hist2d,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.hist2d.html
+Drawing function for violin plots.,,matplotlib.axes.Axes.violin,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.violin.html
+Make a violin plot.,,matplotlib.axes.Axes.violinplot,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.violinplot.html
+Draw a box and whisker plot.,,matplotlib.axes.Axes.boxplot,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.boxplot.html
+"Plot the cross correlation between , and ,.",,matplotlib.axes.Axes.xcorr,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.xcorr.html
+Plot a spectrogram.,,matplotlib.axes.Axes.specgram,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.specgram.html
+Plot the power spectral density.,,matplotlib.axes.Axes.psd,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.psd.html
+Plot the phase spectrum.,,matplotlib.axes.Axes.phase_spectrum,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.phase_spectrum.html
+Plot the magnitude spectrum.,,matplotlib.axes.Axes.magnitude_spectrum,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.magnitude_spectrum.html
+Plot the angle spectrum.,,matplotlib.axes.Axes.angle_spectrum,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.angle_spectrum.html
+"Plot the coherence between , and ,.",,matplotlib.axes.Axes.cohere,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.cohere.html
+"Plot the autocorrelation of ,.",,matplotlib.axes.Axes.acorr,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.acorr.html
+Add an infinitely long straight line.,,matplotlib.axes.Axes.axline,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.axline.html
+Add a vertical span (rectangle) across the Axes.,,matplotlib.axes.Axes.axvspan,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.axvspan.html
+Add a vertical line across the Axes.,,matplotlib.axes.Axes.axvline,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.axvline.html
+Add a horizontal span (rectangle) across the Axes.,,matplotlib.axes.Axes.axhspan,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.axhspan.html
+Add a horizontal line across the Axes.,,matplotlib.axes.Axes.axhline,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.axhline.html
+Plot filled polygons.,,matplotlib.axes.Axes.fill,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.fill.html
+"Plot horizontal lines at each , from , to ,.",,matplotlib.axes.Axes.hlines,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.hlines.html
+"Plot vertical lines at each , from , to ,.",,matplotlib.axes.Axes.vlines,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.vlines.html
+Draw a stacked area plot.,,matplotlib.axes.Axes.stackplot,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.stackplot.html
+Plot a horizontal sequence of rectangles.,,matplotlib.axes.Axes.broken_barh,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.broken_barh.html
+Plot a pie chart.,,matplotlib.axes.Axes.pie,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.pie.html
+Create a stem plot.,,matplotlib.axes.Axes.stem,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.stem.html
+Plot identical parallel lines at the given positions.,,matplotlib.axes.Axes.eventplot,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.eventplot.html
+Label a bar plot.,,matplotlib.axes.Axes.bar_label,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.bar_label.html
+Make a bar plot.,,matplotlib.axes.Axes.bar,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.bar.html
+Make a horizontal bar plot.,,matplotlib.axes.Axes.barh,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.barh.html
+Fill the area between two vertical curves.,,matplotlib.axes.Axes.fill_betweenx,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.fill_betweenx.html
+Fill the area between two horizontal curves.,,matplotlib.axes.Axes.fill_between,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.fill_between.html
+Make a plot with log scaling on the y axis.,,matplotlib.axes.Axes.semilogy,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.semilogy.html
+Make a plot with log scaling on the x axis.,,matplotlib.axes.Axes.semilogx,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.semilogx.html
+Make a plot with log scaling on both the x and y axis.,,matplotlib.axes.Axes.loglog,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.loglog.html
+Plot the cross-spectral density.,,matplotlib.axes.Axes.csd,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.csd.html
+Configure the grid lines.,,matplotlib.axes.Axes.grid,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.grid.html
+"[,] Plot coercing the axis to treat floats as dates.",,matplotlib.axes.Axes.plot_date,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.plot_date.html
+Set the label for the x-axis.,,matplotlib.axes.Axes.set_xlabel,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_xlabel.html
+Make a step plot.,,matplotlib.axes.Axes.step,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.step.html
+Set the label for the y-axis.,,matplotlib.axes.Axes.set_ylabel,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_ylabel.html
+"A scatter plot of , vs. , with varying marker size and/or color.",,matplotlib.axes.Axes.scatter,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.scatter.html
+Set the x-axis view limits.,,matplotlib.axes.Axes.set_xlim,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_xlim.html
+Plot y versus x as lines and/or markers with attached errorbars.,,matplotlib.axes.Axes.errorbar,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.errorbar.html
+Plot y versus x as lines and/or markers.,,matplotlib.axes.Axes.plot,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.plot.html
+,,matplotlib.axes.subplot_class_factory,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.subplot_class_factory.html
+Bases: ,,matplotlib.artist.ArtistInspector,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.ArtistInspector.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=backend
+Bases: ,,matplotlib.axes.SubplotBase,https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.SubplotBase.html
+"Return the value of an ,'s ,, or print all of them.",,matplotlib.artist.get,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.get.html
+"Decorator for Artist.draw method. Provides routines
+that run before and after the draw call. The before and after functions
+are useful for changing artist-dependent renderer attributes or making
+other setup function calls, such as starting and flushing a mixed-mode
+renderer.",,matplotlib.artist.allow_rasterization,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.allow_rasterization.html
+"Inspect an , class (using ,) and
+return information about its settable properties and their current values.",,matplotlib.artist.kwdoc,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.kwdoc.html
+"Return boolean flag, , if artist is included in layout
+calculations.",,matplotlib.artist.Artist.get_in_layout,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_in_layout.html
+"Whether the artist is 'stale' and needs to be re-drawn for the output
+to match the internal state of the artist.",,matplotlib.artist.Artist.stale,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.stale.html
+"Set if artist is to be included in layout calculations,
+E.g. ,,
+,, and
+,.",,matplotlib.artist.Artist.set_in_layout,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.set_in_layout.html
+" and , sticky edge lists for autoscaling.",,matplotlib.artist.Artist.sticky_edges,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.sticky_edges.html
+Return the url.,,matplotlib.artist.Artist.get_url,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_url.html
+Set the url for the artist.,,matplotlib.artist.Artist.set_url,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.set_url.html
+Return the label used for this artist in the legend.,,matplotlib.artist.Artist.get_label,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_label.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=pcolor.shading
+Return the group id.,,matplotlib.artist.Artist.get_gid,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_gid.html
+Set a label that will be displayed in the legend.,,matplotlib.artist.Artist.set_label,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.set_label.html
+Set the (group) id for the artist.,,matplotlib.artist.Artist.set_gid,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.set_gid.html
+"Convert , using the unit type of the yaxis.",,matplotlib.artist.Artist.convert_yunits,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.convert_yunits.html
+Return whether units are set on any axis.,,matplotlib.artist.Artist.have_units,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.have_units.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=figure.titleweight
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=toolbar
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=image.composite_image
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=markers.fillstyle
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=savefig.directory
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=figure.titlesize
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=axes.edgecolor
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=legend.edgecolor
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=savefig.jpeg_quality
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=legend.facecolor
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=axes.formatter.useoffset
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=axes.xmargin
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=axes.ymargin
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=axes.facecolor
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=legend.framealpha
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=xtick.minor.visible
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=ytick.minor.visible
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=axes.labelpad
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=contour.corner_mask
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=savefig.transparent
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=xaxis.labelpad
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=yaxis.labelpad
+"Convert , using the unit type of the xaxis.",,matplotlib.artist.Artist.convert_xunits,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.convert_xunits.html
+Return whether the Artist has an explicitly set transform.,,matplotlib.artist.Artist.is_transform_set,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.is_transform_set.html
+"Return the , instance used by this artist.",,matplotlib.artist.Artist.get_transform,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_transform.html
+Set the artist transform.,,matplotlib.artist.Artist.set_transform,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.set_transform.html
+Find artist objects.,,matplotlib.artist.Artist.findobj,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.findobj.html
+"Return a list of the child ,s of this ,.",,matplotlib.artist.Artist.get_children,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_children.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=ytick.major.left
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=lines.scale_dashes
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=hist.bins
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=ytick.major.right
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=ytick.minor.right
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=ytick.minor.left
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=axes.formatter.offset_threshold
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=xtick.minor.top
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=xtick.minor.bottom
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=svg.hashsalt
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=xtick.major.top
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=xtick.major.bottom
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=date.autoformatter.microsecond
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=date.autoformatter.second
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=hatch.color
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=date.autoformatter.minute
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=date.autoformatter.day
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=date.autoformatter.month
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=date.autoformatter.hour
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=hatch.linewidth
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=date.autoformatter.year
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=lines.markersize
+"Return the , instance the artist belongs to.",,matplotlib.artist.Artist.get_figure,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_figure.html
+"Set the , instance the artist belongs to.",,matplotlib.artist.Artist.set_figure,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.set_figure.html
+"Like ,, but includes any clipping.",,matplotlib.artist.Artist.get_tightbbox,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_tightbbox.html
+"The , instance the artist resides in, or ,.",,matplotlib.artist.Artist.axes,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.axes.html
+Get the artist's bounding box in display space.,,matplotlib.artist.Artist.get_window_extent,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_window_extent.html
+Return filter function to be used for agg filter.,,matplotlib.artist.Artist.get_agg_filter,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_agg_filter.html
+,,matplotlib.artist.Artist.get_path_effects,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_path_effects.html
+Set the path effects.,,matplotlib.artist.Artist.set_path_effects,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.set_path_effects.html
+Return whether the artist is to be rasterized.,,matplotlib.artist.Artist.get_rasterized,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_rasterized.html
+Force rasterized (bitmap) drawing for vector graphics output.,,matplotlib.artist.Artist.set_rasterized,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.set_rasterized.html
+Return the sketch parameters for the artist.,,matplotlib.artist.Artist.get_sketch_params,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_sketch_params.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=backend.qt4
+Set the sketch parameters.,,matplotlib.artist.Artist.set_sketch_params,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.set_sketch_params.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=backend.qt5
+Set the agg filter.,,matplotlib.artist.Artist.set_agg_filter,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.set_agg_filter.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=legend.title_fontsize
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=axes.formatter.limits
+Return the artist's zorder.,,matplotlib.artist.Artist.get_zorder,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_zorder.html
+"Set the zorder for the artist. Artists with lower zorder
+values are drawn first.",,matplotlib.artist.Artist.set_zorder,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.set_zorder.html
+,,matplotlib.artist.Artist.zorder,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.zorder.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=backend.multifigure
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=date.epoch
+Return the visibility.,,matplotlib.artist.Artist.get_visible,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_visible.html
+Set the artist's visibility.,,matplotlib.artist.Artist.set_visible,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.set_visible.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=boxplot.boxprops.linewidth
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=text.kerning_factor
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=axes.titlecolor
+Return the snap setting.,,matplotlib.artist.Artist.get_snap,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_snap.html
+Set the snapping behavior.,,matplotlib.artist.Artist.set_snap,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.set_snap.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=examples.directory
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=mathtext.default
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=ps.useafm
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=savefig.edgecolor
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=savefig.frameon
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=pdf.fonttype
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=legend.labelcolor
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=ps.fonttype
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=savefig.facecolor
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=svg.fonttype
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=date.converter
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=contour.linewidth
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=image.lut
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=mathtext.fallback
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=text.hinting
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=font.cursive
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=figure.raise_window
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=xtick.labelcolor
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=pdf.preamble
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=date.interval_multiples
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=pcolormesh.snap
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=boxplot.whiskers
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=lines.markerfacecolor
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=figure.facecolor
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=lines.markeredgecolor
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=font.fantasy
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=xtick.color
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=text.latex.preamble
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=pgf.preamble
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=keymap.quit_all
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=yaxis.labelposition
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=animation.ffmpeg_path
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=xaxis.labelposition
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight='text.usetex'
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=image.origin
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=axes.formatter.use_mathtext'
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=axes.formatter.use_locale
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=axes.linewidth
+"Return the alpha value used for blending - not supported on all
+backends.",,matplotlib.artist.Artist.get_alpha,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_alpha.html
+Set the alpha value used for blending - not supported on all backends.,,matplotlib.artist.Artist.set_alpha,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.set_alpha.html
+Return whether the artist is animated.,,matplotlib.artist.Artist.get_animated,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_animated.html
+Set whether the artist is intended to be used in an animation.,,matplotlib.artist.Artist.set_animated,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.set_animated.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=ps.distiller.res
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=ps.usedistiller
+Draw the Artist (and its children) using the given renderer.,,matplotlib.artist.Artist.draw,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.draw.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=pgf.texsystem
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=pgf.rcfonts
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=font.monospace
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=font.sans-serif
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=font.serif
+Set multiple properties at once.,,matplotlib.artist.Artist.set,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.set.html
+"Copy properties from , to ,.",,matplotlib.artist.Artist.update_from,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.update_from.html
+Return a dictionary of all the properties of the artist.,,matplotlib.artist.Artist.properties,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.properties.html
+"Update this artist's properties from the dict ,.",,matplotlib.artist.Artist.update,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.update.html
+Return the clip path.,,matplotlib.artist.Artist.get_clip_path,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_clip_path.html
+Set the artist's clip path.,,matplotlib.artist.Artist.set_clip_path,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.set_clip_path.html
+Return the clipbox.,,matplotlib.artist.Artist.get_clip_box,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_clip_box.html
+"Set the artist's clip ,.",,matplotlib.artist.Artist.set_clip_box,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.set_clip_box.html
+Return whether the artist uses clipping.,,matplotlib.artist.Artist.get_clip_on,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_clip_on.html
+Set whether the artist uses clipping.,,matplotlib.artist.Artist.set_clip_on,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.set_clip_on.html
+Return the picking behavior of the artist.,,matplotlib.artist.Artist.get_picker,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_picker.html
+Define the picking behavior of the artist.,,matplotlib.artist.Artist.set_picker,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.set_picker.html
+Return whether the artist is pickable.,,matplotlib.artist.Artist.pickable,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.pickable.html
+Process a pick event.,,matplotlib.artist.Artist.pick,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.pick.html
+Test whether the artist contains the mouse event.,,matplotlib.artist.Artist.contains,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.contains.html
+"Return whether this artist is queried for custom context information
+when the mouse cursor moves over it.",,matplotlib.artist.Artist.mouseover,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.mouseover.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=agg.path.chunksize
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=path.simplify
+"Return whether this artist is queried for custom context information
+when the mouse cursor moves over it.",,matplotlib.artist.Artist.get_mouseover,https://matplotlib.org/stable/api/_as_gen/matplotlib.artist.Artist.get_mouseover.html
+,,Customizing Matplotlib with style sheets and rcParams,https://matplotlib.org/stable/tutorials/introductory/customizing.html?highlight=path.simplify_threshold
