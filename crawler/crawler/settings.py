@@ -17,7 +17,7 @@ NEWSPIDER_MODULE = "crawler.spiders"
 #USER_AGENT = "crawler (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 ITEM_PIPELINES = {
     'crawler.pipelines.DropNullValuesPipeline': 100,
