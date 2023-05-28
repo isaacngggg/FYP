@@ -1,10 +1,5 @@
-from pymongo import MongoClient
+
 import numpy as np
-
-from bson.objectid import ObjectId
-
-
-from rank_bm25 import BM25Okapi
 import string
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
@@ -15,7 +10,7 @@ from nltk.corpus import wordnet
 def normalise (text,lemma = True,stem = False,synon = True):
     normalisedDescription = []
     tokens = word_tokenize(text)
-    tokens_without_punctuation = [token for token in tokens if not any(char in string.punctuation for char in token)]
+    tokens_without_punctuation = [token.lower() for token in tokens if not any(char in string.punctuation for char in token)]
     stop_words = set(stopwords.words('english'))
     normalisedDescription = [word for word in tokens_without_punctuation if word.lower() not in stop_words]
     if lemma:
@@ -26,6 +21,7 @@ def normalise (text,lemma = True,stem = False,synon = True):
         normalisedDescription = [stemmer.stem(word) for word in normalisedDescription]
     if synon:
         normalisedDescription = replace_synonyms(normalisedDescription)
+    
     return normalisedDescription
 
 def replace_synonyms(tokens):
@@ -44,58 +40,66 @@ def replace_synonyms(tokens):
             replaced_tokens.append(token)
     return replaced_tokens
 
-
-def fetchMongobyID (ID):
-    client = MongoClient('mongodb://localhost:27017/')
-    db = client['scrapped-function']
-    collection = db['all']
-    document = collection.find_one({"_id": ObjectId(ID)})
-    #print (document)
-    client.close()
-    return document
-
-def printtop_n (sortedBertArr, IDs,n = 5):
-    for i in range (0,n):
-        document = fetchMongobyID (IDs[sortedBertArr[i]])
-        printDoc(document)
-        print ('^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^')
-
-def printDoc (document):
-    print ('Title: ' + document ['title'])
-    print ('Description: ' +document ['description']+'\n')
+from pymongo import MongoClient
     
 def fetchAllMongo():
     client = MongoClient('mongodb://localhost:27017/')
     db = client['scrapped-function']
     collection = db['all']
-    projection = {'normalisedDescription': 1, 'description': 1, '_id':1,'title':1}
+    projection = {'spider': 0, 'url': 0}
     cursor = collection.find({}, projection)
 
-    tokenized_corpus = []
-    corpus = []
-    IDs = []
+    stemDes = []
+    lemDes = []
+    stemLemDes = []
+    synonDes = []
+    des = []
+    ids = []
     titles = []
     for document in cursor:
-        tokenized_corpus += [document['normalisedDescription']]
-        corpus += [document['description']]
-        IDs += [document['_id']]
+        des += [document['description']]
+        ids += [document['_id']]
         titles += [document['title']]
+        stemDes += [document['normalisedDescription_stem']]
+        lemDes += [document['normalisedDescription_lem']]
+        stemLemDes += [document['normalisedDescription_stem_lem']]
+        synonDes += [document['normalisedDescription_synon']]
     client.close()
-    
-    return tokenized_corpus, corpus, IDs, titles
+
+    return ids,titles,des,stemDes,lemDes,stemLemDes,synonDes
+
+from rank_bm25 import BM25Okapi
 
 
-def getIDs_BM25Top_n (tokenized_corpus,normalised_query,n = 50):
+def getScores (tokenized_corpus,normalised_query):
     bm25 = BM25Okapi(tokenized_corpus)
     doc_scores = np.array(bm25.get_scores(normalised_query))
-    return np.argsort(-doc_scores)
-def main():
-    tokenized_corpus, corpus, IDs, titles = fetchAllMongo()
+    return np.sort(-doc_scores)
 
-    query = "maximum arg"
-    normalised_query = normalise(query)
+def getRanksArr (queries,funcs):
+    ids,titles,des,stemDes,lemDes,stemLemDes,synonDes = fetchAllMongo()
+    RanksArr = []
+    rankings = []
+    actualDescriptions = []
+    fetchedTitles = []
+    for j in range (0, len(queries)):
+        query = queries[j]
+        normalised_query = normalise(query,stem = False,lemma = True, synon=True)
+        normalisedDes = [normalise(text,stem = False,lemma = True, synon=True) for text in des]
+        bm25 = BM25Okapi(normalisedDes)
+        scores = np.array(bm25.get_scores(normalised_query))  
+        sortedIndices = np.argsort(-scores)
+        sortedTitles = [titles[i] for i in sortedIndices]
+        RanksArr += [i for i, value in enumerate(sortedTitles) if value == funcs[j]]
+        
+    return RanksArr
 
-    sortedBM25Arr = getIDs_BM25Top_n(normalised_query)
-    printtop_n(sortedBM25Arr,IDs)
+import pandas as pd
 
+df = pd.read_csv('data.csv')
+queries = np.array(df["query"])
+funcs = np.array(df["function"])
+
+
+print (getRanksArr (queries,funcs))
 

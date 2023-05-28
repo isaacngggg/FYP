@@ -1,8 +1,3 @@
-# This package will contain the spiders of your Scrapy project
-#
-# Please refer to the documentation for information on how to create and manage
-# your spiders.
-
 import string
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
@@ -42,3 +37,6 @@ def replace_synonyms(tokens):
         else:
             replaced_tokens.append(token)
     return replaced_tokens
+
+print(normalise('Find indices , index where maximum elements should be inserted to maintain order'))
+print(normalise('Find indices , index where maximum elements should be inserted to maintain order',synon = False))
