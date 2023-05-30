@@ -5,7 +5,7 @@ import json
 query = sys.argv[1]
 n = int(sys.argv[2])
 # query = "maximum array"
-# n = 100
+# n = 20
 # if (n < 1):
 #     n = 5
 

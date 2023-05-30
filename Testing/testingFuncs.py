@@ -1,11 +1,13 @@
 
 import numpy as np
+import time
 import string
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet
+
 
 def normalise (text,lemma = True,stem = False,synon = True):
     normalisedDescription = []
@@ -95,17 +97,7 @@ def getRanksArr (queries,funcs,normalMethod,b = 0.75,k1 = 1.5):
     for j in range (0, len(queries)):
         query = queries[j]
         # normalisedDes = [normalise(text,stem = False,lemma = True, synon=True) for text in des]
-        if normalMethod == 'stem' :
-            normalised_query = normalise(query,stem = True,lemma = False, synon=False)
-        elif normalMethod == 'lem' :
-            normalised_query = normalise(query,stem = False,lemma = True, synon=False)
-        elif normalMethod == 'stemLem' :
-            normalised_query = normalise(query,stem = True,lemma = True, synon=False)
-        elif normalMethod == 'synon' :
-            normalised_query = normalise(query,stem = False,lemma = True, synon=True)
-        else :
-            print ("ERROR: no valid method")
-            exit()
+        normalised_query = normaliseByMethod (query,normalMethod)
         scores = np.array(bm25.get_scores(normalised_query))  
         sortedIndices = np.argsort(-scores)
         sortedTitles = [titles[i] for i in sortedIndices]
@@ -113,6 +105,68 @@ def getRanksArr (queries,funcs,normalMethod,b = 0.75,k1 = 1.5):
         
     return RanksArr
 
+def getBM25Arrays (query,func,normalMethod,n,b = 0.75,k1 = 1.5):
+    ids,titles,des,stemDes,lemDes,stemLemDes,synonDes = fetchAllMongo()
+    BM25RanksArr = []
+    if normalMethod == 'stem' :
+        corpus = stemDes
+    elif normalMethod == 'lem' :
+        corpus = lemDes
+        #print ("Norm method: lem")
+    elif normalMethod == 'stemLem' :    
+        corpus = stemLemDes
+        #print ("Norm method: stemLem")
+    elif normalMethod == 'synon' :
+        corpus = synonDes
+    else :
+        print ("ERROR: no valid method")
+        exit()
+    bm25 = BM25Okapi(corpus,b=b,k1=k1)
+    # normalisedDes = [normalise(text,stem = False,lemma = True, synon=True) for text in des]
+    normalised_query = normaliseByMethod (query,normalMethod)
+    scores = np.array(bm25.get_scores(normalised_query))  
+    sortedIndices = np.argsort(-scores)
+    sortedTitles = [titles[i] for i in sortedIndices]
+    sortedDes = [des[i] for i in sortedIndices]
+    BM25Rank = [i for i, value in enumerate(sortedTitles) if value == func]
+
+    slicedTitles = sortedTitles[:n]
+    slicedDescription = sortedDes[:n]
+    
+    return slicedTitles,slicedDescription, BM25Rank
+
+def normaliseByMethod (query,normalMethod):
+    if normalMethod == 'stem' :
+        normalised_query = normalise(query,stem = True,lemma = False, synon=False)
+    elif normalMethod == 'lem' :
+        normalised_query = normalise(query,stem = False,lemma = True, synon=False)
+    elif normalMethod == 'stemLem' :
+        normalised_query = normalise(query,stem = True,lemma = True, synon=False)
+    elif normalMethod == 'synon' :
+        normalised_query = normalise(query,stem = False,lemma = True, synon=True)
+    else :
+        print ("ERROR: no valid method")
+        exit()
+    return normalised_query
+
+def timeStart():
+    return time.time()
+
+def timeSince(last):
+    now = time.time()
+    rounded_value = np.around(now-last, decimals=3)
+    return rounded_value
+
+import requests
+API_URL = "https://api-inference.huggingface.co/models/sentence-transformers/all-MiniLM-L6-v2"
+headers = {"Authorization": f"Bearer {'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'}"}
+
+def queryBERT(user_input,corpus):
+    response = requests.post(API_URL, headers=headers, 
+                             json={ "inputs": {
+                                            "source_sentence": user_input,
+                                            "sentences": corpus }})
+    return response.json()
 
 # import pandas as pd
 

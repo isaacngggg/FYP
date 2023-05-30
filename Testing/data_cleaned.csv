@@ -1,0 +1,13 @@
+query,function
+stack array horizontally,numpy.vstack
+add elements behind an array,numpy.append
+change the dimensions of an array,numpy.reshape
+delete an array,numpy.delete
+sum of an array,numpy.sum
+turn list into array numpy,numpy.array
+find shape of array numpy,numpy.shape
+average of list numpy,numpy.average
+standard deviation of list numpy,numpy.std
+reverse array numpy,numpy.flip
+create array and raise to power of 2 numpy,numpy.power
+convert array back to list numpy,numpy.ndarray.tolist
