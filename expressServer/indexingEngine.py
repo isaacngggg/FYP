@@ -4,7 +4,7 @@ import json
 # Retrieve the form data from command-line arguments
 query = sys.argv[1]
 n = int(sys.argv[2])
-# query = "maximum array"
+# query = "find playlist names"
 # n = 20
 # if (n < 1):
 #     n = 5
@@ -63,7 +63,7 @@ def fetchAllMongo():
     client = MongoClient('mongodb://localhost:27017/')
     db = client['scrapped-function']
     collection = db['all']
-    projection = {'normalisedDescription': 1, 'description': 1, '_id':1}
+    projection = {'normalisedDescription_synon': 1, 'description': 1, '_id':1}
     cursor = collection.find({}, projection)
 
     tokenized_corpus = []
@@ -71,7 +71,7 @@ def fetchAllMongo():
     IDs = []
     
     for document in cursor:
-        tokenized_corpus += [document['normalisedDescription']]
+        tokenized_corpus += [document['normalisedDescription_synon']]
         corpus += [document['description']]
         IDs += [document['_id']]
     client.close()

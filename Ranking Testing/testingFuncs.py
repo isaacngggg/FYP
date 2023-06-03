@@ -9,7 +9,7 @@ from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet
 
 
-def normalise (text,lemma = True,stem = False,synon = True):
+def normalise (text,lemma = False,stem = False,synon = False, printSynon = False):
     normalisedDescription = []
     tokens = word_tokenize(text)
     tokens_without_punctuation = [token.lower() for token in tokens if not any(char in string.punctuation for char in token)]
@@ -22,11 +22,15 @@ def normalise (text,lemma = True,stem = False,synon = True):
         stemmer = PorterStemmer()
         normalisedDescription = [stemmer.stem(word) for word in normalisedDescription]
     if synon:
-        normalisedDescription = replace_synonyms(normalisedDescription)
-    
+        lemmatizer = WordNetLemmatizer()
+        normalisedDescription = [lemmatizer.lemmatize(token) for token in normalisedDescription]
+        if printSynon:    
+            normalisedDescription = replace_synonyms(normalisedDescription,printSyn=True)
+        else: 
+            normalisedDescription = replace_synonyms(normalisedDescription)
     return normalisedDescription
 
-def replace_synonyms(tokens):
+def replace_synonyms(tokens,printSyn = False):
     replaced_tokens = []
     for token in tokens:
         synsets = wordnet.synsets(token)
@@ -34,6 +38,8 @@ def replace_synonyms(tokens):
             first_synset = synsets[0]
             lemma_names = first_synset.lemma_names()
             if lemma_names:
+                if printSyn:
+                    print (f"Synonom Group for {token}: {lemma_names}")
                 replaced_token = lemma_names[0]
                 replaced_tokens.append(replaced_token)
             else:
@@ -85,9 +91,6 @@ def getRanksArr (queries,funcs,normalMethod,b = 0.75,k1 = 1.5):
     elif normalMethod == 'lem' :
         bm25 = BM25Okapi(lemDes,b=b,k1=k1)
         #print ("Norm method: lem")
-    elif normalMethod == 'stemLem' :
-        bm25 = BM25Okapi(stemLemDes,b=b,k1=k1)
-        #print ("Norm method: stemLem")
     elif normalMethod == 'synon' :
         bm25 = BM25Okapi(synonDes,b=b,k1=k1)
         #print ("Norm method: Synon")
@@ -107,7 +110,6 @@ def getRanksArr (queries,funcs,normalMethod,b = 0.75,k1 = 1.5):
 
 def getBM25Arrays (query,func,normalMethod,n,b = 0.75,k1 = 1.5):
     ids,titles,des,stemDes,lemDes,stemLemDes,synonDes = fetchAllMongo()
-    BM25RanksArr = []
     if normalMethod == 'stem' :
         corpus = stemDes
     elif normalMethod == 'lem' :
@@ -137,13 +139,11 @@ def getBM25Arrays (query,func,normalMethod,n,b = 0.75,k1 = 1.5):
 
 def normaliseByMethod (query,normalMethod):
     if normalMethod == 'stem' :
-        normalised_query = normalise(query,stem = True,lemma = False, synon=False)
+        normalised_query = normalise(query,stem = True)
     elif normalMethod == 'lem' :
-        normalised_query = normalise(query,stem = False,lemma = True, synon=False)
-    elif normalMethod == 'stemLem' :
-        normalised_query = normalise(query,stem = True,lemma = True, synon=False)
+        normalised_query = normalise(query,lemma = True)
     elif normalMethod == 'synon' :
-        normalised_query = normalise(query,stem = False,lemma = True, synon=True)
+        normalised_query = normalise(query,synon=True)
     else :
         print ("ERROR: no valid method")
         exit()
@@ -162,18 +162,21 @@ API_URL = "https://api-inference.huggingface.co/models/sentence-transformers/all
 headers = {"Authorization": f"Bearer {'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'}"}
 
 def queryBERT(user_input,corpus):
-    response = requests.post(API_URL, headers=headers, 
-                             json={ "inputs": {
-                                            "source_sentence": user_input,
-                                            "sentences": corpus }})
-    return response.json()
-
-# import pandas as pd
-
-# df = pd.read_csv('data.csv')
-# queries = np.array(df["query"])
-# funcs = np.array(df["function"])
-
-
-# print (getRanksArr (queries,funcs))
-
+    while True:
+        try:
+            bertStart = timeStart()
+            response = requests.post(API_URL, headers=headers, 
+                                    json={ "inputs": {
+                                                    "source_sentence": user_input,
+                                                    "sentences": corpus }},timeout= 5)
+            
+            if response.status_code == 200:
+                bertTime = timeSince(bertStart)
+                return response.json(),bertTime
+        except requests.exceptions.Timeout:
+            print("Timeout error occurred. Retrying...")
+        except requests.exceptions.ReadTimeout:
+            print("ReadTimeout error occurred. Retrying...")
+        except requests.exceptions.RequestException as e:  
+            print(f"An error occurred: {e}")  
+        time.sleep(3)

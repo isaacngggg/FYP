@@ -5,7 +5,7 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet
 
-def normalise (text,lemma = True,stem = False,synon = True):
+def normalise (text,lemma = False,stem = False,synon = False):
     normalisedDescription = []
     tokens = word_tokenize(text)
     tokens_without_punctuation = [token.lower() for token in tokens if not any(char in string.punctuation for char in token)]
@@ -18,6 +18,8 @@ def normalise (text,lemma = True,stem = False,synon = True):
         stemmer = PorterStemmer()
         normalisedDescription = [stemmer.stem(word) for word in normalisedDescription]
     if synon:
+        lemmatizer = WordNetLemmatizer()
+        normalisedDescription = [lemmatizer.lemmatize(token) for token in normalisedDescription]
         normalisedDescription = replace_synonyms(normalisedDescription)
     
     return normalisedDescription
@@ -30,6 +32,7 @@ def replace_synonyms(tokens):
             first_synset = synsets[0]
             lemma_names = first_synset.lemma_names()
             if lemma_names:
+                print (lemma_names)
                 replaced_token = lemma_names[0]
                 replaced_tokens.append(replaced_token)
             else:
@@ -38,5 +41,8 @@ def replace_synonyms(tokens):
             replaced_tokens.append(token)
     return replaced_tokens
 
-print(normalise('Find indices , index where maximum elements should be inserted to maintain order'))
-print(normalise('Find indices , index where maximum elements should be inserted to maintain order',synon = False))
+
+query = 'change the dimensions of an array'
+print('Stemming: ',normalise(query,stem = True))
+print('Lemmatization: ', normalise(query,lemma= True))
+print('Synonom Replacement: ',normalise(query,synon = True))

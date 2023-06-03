@@ -1,30 +1,29 @@
 
 from scrapy.linkextractors import LinkExtractor
-from crawler.items import crawlerItem
+from scrapy.spiders import Rule,CrawlSpider
 
-from scrapy.spiders import CrawlSpider, Rule
+from scrapy.loader import ItemLoader
+from crawler.items import crawlerItem
 from . import normalise
 
-class MatplotlibSpider(CrawlSpider):
-    name = "matplotlib"
-    allowed_domains = ["matplotlib.org"]
-    start_urls = ["http://matplotlib.org/"]
-    delimiter = " "  
 
+class NumpySpider(CrawlSpider):
+    name = "seaborn"
+    allowed_domains = ["seaborn.pydata.org"]
+    start_urls = ["https://seaborn.pydata.org/generated/seaborn.objects.Plot.html"]
+    
     rules = (
-        #Rule(LinkExtractor(restrict_xpaths='//*[contains(@class,''"admonition seealso")]'), callback ='parse_item', follow = True),
-        Rule(LinkExtractor(allow = ('.*matplotlib.org/stable/.*matplotlib..*')), callback ='parse'),
-        Rule(LinkExtractor(allow = ('.*matplotlib.org/stable'),deny = ('.*matplotlib.org/1.*'))),
-        #Rule(LinkExtractor(allow = ".*numpy\.org\/doc\/stable.*",), follow = True, callback='parse'),
-        )
 
+        Rule(LinkExtractor(allow = ('.*seaborn.pydata.org/generated/seaborn..*')), callback ='parse'),
+        Rule(LinkExtractor(allow = ('.*seaborn.pydata.org/generated.*'))),
+        
+        )
 
     def parse(self, response):
         # Parse each quote div 
-        delimiter = " "  
         item=crawlerItem()
         item['title'] = response.xpath('//h1/text()').get()
-        item['description'] = delimiter.join(response.xpath('/html/body/div[2]/div/main/div/div[1]/article/section/dl/dd/p[1]/text()').getall())
+        item['description'] = response.xpath('//article/section/dl/dd/p[1]/text()').get()
         item['normalisedDescription_stem'] = normalise(item['description'],stem = True, lemma = False, synon=False)
         item['normalisedDescription_lem'] = normalise(item['description'],stem = False, lemma = True, synon=False)
         item['normalisedDescription_stem_lem'] = normalise(item['description'],stem = True, lemma = True, synon=False)
@@ -36,3 +35,6 @@ class MatplotlibSpider(CrawlSpider):
         
         yield item
 
+        """
+            response.css('p::text').getall()
+        """

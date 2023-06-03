@@ -1,0 +1,14 @@
+query,function
+an array with nothing in it,numpy.empty
+make all of the array in a colomn,numpy.vstack
+add elements at the end of an array,numpy.append
+change the size of an array,numpy.reshape
+take away a row in an matrix,numpy.delete
+create an array of numbers at regular intervals,numpy.linspace
+get the total of an array,numpy.sum
+turn a list into array,numpy.array
+find how big an array is,numpy.shape
+make an array backwards numpy,numpy.flip
+adding a legend to the plot,matplotlib.pyplot.figlegend
+configure the name of the axis,matplotlib.pyplot.title
+find the different item in an array,numpy.unique
