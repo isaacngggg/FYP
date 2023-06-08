@@ -29,7 +29,7 @@ avRanks = [np.average(r) for r in ranks]
 plt.bar(methodsTitle, avRanks)
 plt.xlabel('Normalisation Methods')
 plt.ylabel('Average Ranking')
-plt.title('Initial Normalisation Methods Average Ranking')
+plt.title('Average ranking under different normalisation methods')
 
 
 #%%
@@ -41,7 +41,7 @@ plt.barh(index - bar_height, ranks[2][0], height=bar_height, label=methodsTitle[
 
 plt.yticks(index, funcs)
 plt.xlabel('Ranks')
-plt.ylabel('Queries')
+plt.ylabel('Desired function from queries')
 plt.legend()
 plt.title('Ranks per query under different normalisation methods')
 

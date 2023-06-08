@@ -9,7 +9,7 @@ import re
 class pypiSpider(CrawlSpider):
     name = "pypi"
     allowed_domains = ["pypi.org","github.com"]
-    start_urls = ["https://pypi.org/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3"]
+    start_urls = ["https://pypi.org/search/?q=&o=&c=Development+Status+%3A%3A+5+-+Production%2FStable"]
 
     rules = (
     #     Rule(LinkExtractor(allow = ('.*pypi.org/project/.*')), callback ='parse'),

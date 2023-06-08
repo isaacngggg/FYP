@@ -1,0 +1,5 @@
+libraries,acceptedNames
+"numpy","np,numpy"
+"matplotlib","matplotlib,pyplot"
+"pandas","pandas,pd"
+"seaborn","seaborn,sns"

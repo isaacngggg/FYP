@@ -65,12 +65,14 @@
   <body>
     <div class="search-container">
       <h1 style="width: 100%">
-        Search Results for "<span class="query-span"><%= query %></span>" at n = <span class="query-span"><%= n %></span> :
+        Search Results for "<span class="query-span"><%= query %></span>" :
       </h1>
       <% result.forEach(item => { %>
       <div class="card">
         <div class="heading-div"><h3><%= item.title %></h3></div>
         <div class="heading-div"><p><%= item.description %></p></div>
+        <div class="heading-div"><p><%= item.installMethod %></p></div>
+        <div class="heading-div"><p><%= item.gitHubStar %></p></div>
         <a href="<%= item.url %>">See more</a>
       </div>
       <% }); %>

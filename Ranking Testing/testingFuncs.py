@@ -161,6 +161,10 @@ import requests
 API_URL = "https://api-inference.huggingface.co/models/sentence-transformers/all-MiniLM-L6-v2"
 headers = {"Authorization": f"Bearer {'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'}"}
 
+# API_URL = "https://api-inference.huggingface.co/models/sentence-transformers/all-MiniLM-L6-v2"
+# headers = {"Authorization": f"Bearer {'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'}"}
+
+
 def queryBERT(user_input,corpus):
     while True:
         try:
@@ -168,7 +172,9 @@ def queryBERT(user_input,corpus):
             response = requests.post(API_URL, headers=headers, 
                                     json={ "inputs": {
                                                     "source_sentence": user_input,
-                                                    "sentences": corpus }},timeout= 5)
+                                                    "sentences": corpus }}
+                                    # ,timeout= 5
+                                    )
             
             if response.status_code == 200:
                 bertTime = timeSince(bertStart)
@@ -180,3 +186,22 @@ def queryBERT(user_input,corpus):
         except requests.exceptions.RequestException as e:  
             print(f"An error occurred: {e}")  
         time.sleep(3)
+
+def normalise_wLibraryCheck (text,lemma = False,stem = False,synon = False):
+    normalisedDescription = []
+    tokens = word_tokenize(text)
+    tokens_without_punctuation = [token.lower() for token in tokens if not any(char in string.punctuation for char in token)]
+    stop_words = set(stopwords.words('english'))
+    normalisedDescription = [word for word in tokens_without_punctuation if word.lower() not in stop_words]
+    collection, normalisedDescription = libraryCheck(normalisedDescription)
+    if lemma:
+        lemmatizer = WordNetLemmatizer()
+        normalisedDescription = [lemmatizer.lemmatize(token) for token in normalisedDescription]
+    if stem:
+        stemmer = PorterStemmer()
+        normalisedDescription = [stemmer.stem(word) for word in normalisedDescription]
+    if synon:
+        lemmatizer = WordNetLemmatizer()
+        normalisedDescription = [lemmatizer.lemmatize(token) for token in normalisedDescription]
+        normalisedDescription = replace_synonyms(normalisedDescription)
+    return normalisedDescription,collection
