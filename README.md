@@ -1,4 +1,4 @@
-#PySearch
+# PySearch
 A semantic search engine for python code documentation that uses a varying sparse and dense vector ratio and optimised for speed and accuracy. 
 
 Data has been scraped from varies code documentation sites such as Seaborn, Matplotlib & numpy.
